@@ -8,6 +8,7 @@ const views = {
   'being-seen': ['being-seen', 'wechat'],
   'personal-brand': ['personal-brand', 'wechat'],
   'understanding-needs': ['understanding-needs', 'wechat'],
+  'waymark-notes': ['waymark-notes', 'wechat'],
   hero: ['home', 'home'],
   about: ['about', 'home'],
   skills: ['about', 'home'],

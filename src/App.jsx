@@ -25,6 +25,7 @@ import DesignCareArticle from './sections/DesignCareArticle';
 import BeingSeenArticle from './sections/BeingSeenArticle';
 import PersonalBrandArticle from './sections/PersonalBrandArticle';
 import UnderstandingNeedsArticle from './sections/UnderstandingNeedsArticle';
+import WaymarkArticle from './sections/WaymarkArticle';
 
 export default function App() {
   const [isMobile, setIsMobile] = useState(() => window.matchMedia('(max-width: 767px)').matches);
@@ -85,6 +86,7 @@ export default function App() {
     'being-seen': <BeingSeenArticle language={language} onNavigate={navigate} />,
     'personal-brand': <PersonalBrandArticle language={language} onNavigate={navigate} />,
     'understanding-needs': <UnderstandingNeedsArticle language={language} onNavigate={navigate} />,
+    'waymark-notes': <WaymarkArticle language={language} onNavigate={navigate} />,
     home: <Hero language={language} onNavigate={navigate} />,
     about: <About language={language} onNavigate={navigate} />,
     portfolio: <WebProjects language={language} onNavigate={navigate} />,

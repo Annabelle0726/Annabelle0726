@@ -143,6 +143,7 @@ export default function Sidebar({ isMobile, isOpen, activeSection, activeGroup, 
               {child('being-seen', '想被看见，也想看见你')}
               {child('personal-brand', 'AI 时代的个人品牌：你靠什么被记住？')}
               {child('understanding-needs', '从短剧爆火，看懂人们真正需要什么')}
+              {child('waymark-notes', '求职已经够累了，别再让信息散落各处')}
         </>)}
         {group('favorites', 'models', <>{child('models', t.models)}{child('quotes', t.quotes)}</>)}
         <li data-group="contact" className={`sidebar-group${activeGroup === 'contact' ? ' is-active' : ''}`}><div className="sidebar-nav-row"><a className="sidebar-parent" href="#contact" onClick={onClose} aria-current={activeSection === 'contact' ? 'page' : undefined}><span className="sidebar-icon-tray"><Icon name="contact"/></span><span>{t.contact}</span></a></div></li>
