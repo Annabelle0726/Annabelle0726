@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle-portfolio/#hero"><img src="assets/readme/annabelle-zhu-silk-refined-7s.gif" width="100%" alt="Animated silk signature of Annabelle Zhu"></a>
+  <a href="https://annabelle0726.github.io/Annabelle0726/#hero"><img src="assets/readme/annabelle-zhu-silk-refined-7s.gif" width="100%" alt="Animated silk signature of Annabelle Zhu"></a>
 </p>
 
 <h1 align="center">Annabelle Zhu</h1>
