@@ -9,6 +9,7 @@ const views = {
   'personal-brand': ['personal-brand', 'wechat'],
   'understanding-needs': ['understanding-needs', 'wechat'],
   'waymark-notes': ['waymark-notes', 'wechat'],
+  'taste-studio-notes': ['taste-studio-notes', 'wechat'],
   hero: ['home', 'home'],
   about: ['about', 'home'],
   skills: ['about', 'home'],

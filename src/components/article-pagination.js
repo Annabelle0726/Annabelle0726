@@ -8,6 +8,7 @@ const articles = [
   ['personal-brand', 'AI 时代的个人品牌：你靠什么被记住？'],
   ['understanding-needs', '从短剧爆火，看懂人们真正需要什么'],
   ['waymark-notes', '求职已经够累了，别再让信息散落各处'],
+  ['taste-studio-notes', '审美会变，但我们始终向往美'],
 ];
 
 export function articlePageLinks(routeId, en = false) {
