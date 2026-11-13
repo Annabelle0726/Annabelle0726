@@ -9,6 +9,7 @@ const articles = [
   ['understanding-needs', '从短剧爆火，看懂人们真正需要什么'],
   ['waymark-notes', '求职已经够累了，别再让信息散落各处'],
   ['taste-studio-notes', '审美会变，但我们始终向往美'],
+  ['respecting-lives', '尊重每一种生活，也看见每一个人'],
 ];
 
 export function articlePageLinks(routeId, en = false) {

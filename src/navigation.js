@@ -10,6 +10,7 @@ const views = {
   'understanding-needs': ['understanding-needs', 'wechat'],
   'waymark-notes': ['waymark-notes', 'wechat'],
   'taste-studio-notes': ['taste-studio-notes', 'wechat'],
+  'respecting-lives': ['respecting-lives', 'wechat'],
   hero: ['home', 'home'],
   about: ['about', 'home'],
   skills: ['about', 'home'],
