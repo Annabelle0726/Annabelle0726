@@ -11,6 +11,7 @@ const views = {
   'waymark-notes': ['waymark-notes', 'wechat'],
   'taste-studio-notes': ['taste-studio-notes', 'wechat'],
   'respecting-lives': ['respecting-lives', 'wechat'],
+  'page-soul': ['page-soul', 'wechat'],
   hero: ['home', 'home'],
   about: ['about', 'home'],
   skills: ['about', 'home'],

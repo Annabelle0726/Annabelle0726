@@ -146,6 +146,7 @@ export default function Sidebar({ isMobile, isOpen, activeSection, activeGroup, 
               {child('waymark-notes', '求职已经够累了，别再让信息散落各处')}
               {child('taste-studio-notes', '审美会变，但我们始终向往美')}
               {child('respecting-lives', '尊重每一种生活，也看见每一个人')}
+              {child('page-soul', '页面有了灵魂，是一种什么感觉？')}
         </>)}
         {group('favorites', 'models', <>{child('models', t.models)}{child('quotes', t.quotes)}</>)}
         <li data-group="contact" className={`sidebar-group${activeGroup === 'contact' ? ' is-active' : ''}`}><div className="sidebar-nav-row"><a className="sidebar-parent" href="#contact" onClick={onClose} aria-current={activeSection === 'contact' ? 'page' : undefined}><span className="sidebar-icon-tray"><Icon name="contact"/></span><span>{t.contact}</span></a></div></li>
