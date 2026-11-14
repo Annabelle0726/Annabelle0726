@@ -25,3 +25,7 @@ Interpretation: replace the floating assistant with an in-flow status strip; rem
 ## Overall-page sketch round
 Owner: “把这部分往上移动很多 不然空白太多了 接着做Waymark的草图 需要在overall page”。
 Interpretation: reduce desktop page top padding by 16px and project-list/first-row spacing by 30px; top-align the first project copy instead of centering it. Mobile retains header clearance and reduces first-project gap. Created three whole-page concepts: A alternating editorial rows, B wide board below horizontal project heading, C tall status panels and compact preparation band. Display order B, C, A. These are concepts awaiting selection; only spacing is implemented.
+
+## Startup loading — direction A
+Owner: “我选A”。
+Interpretation: implement centered existing brand-mark.svg, editorial name, ivory surface, fine indeterminate blue/gold line and faint large signature watermark. No silk or page skeleton. Inline mark and critical CSS render before the app bundle; React replaces the startup screen at mount without a forced minimum delay. Retry is shown on module load failure; no-JS and reduced-motion fallbacks remain usable. Verified at 1440/390/320 with the JS bundle held, then released; failure/retry and no-JS checks passed. Real desktop/mobile renders reviewed.

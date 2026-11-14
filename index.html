@@ -3,50 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#ffcd39" />
+    <meta name="theme-color" content="#FCFAF3" />
     <meta name="description" content="Annabelle Zhu's portfolio of data science, web development and UX/UI design." />
     <link rel="icon" type="image/svg+xml" href="./src/assets/brand-mark.svg" />
     <title>Annabelle Zhu Portfolio</title>
     <style>
-      body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
-      .initial-hero { box-sizing: border-box; min-height: 100vh; min-height: 100svh; display: flex; align-items: center; justify-content: center; padding: 2rem; color: #173b6c; background: #FCFAF3; }
-      .initial-hero h1 { margin: 0 0 .75rem; font-size: clamp(2.2rem, 5vw, 4rem); }
-      .initial-hero h2 { margin: 0 0 1rem; font-size: 1.5rem; }
-      .initial-hero p { margin: 0; font-size: 1.125rem; }
-      .initial-hero .startup-notice { margin-top: 1.5rem; max-width: 38rem; line-height: 1.5; font-size: 1rem; }
-      .initial-hero .startup-error { padding: .8rem 1rem; border-radius: .5rem; background: #fff9e6; }
+      body { background:#FCFAF3; margin:0; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; }
+      #portfolio-startup { box-sizing:border-box; min-height:100vh; min-height:100svh; position:relative; isolation:isolate; overflow:hidden; display:grid; place-items:center; padding:32px 24px; color:#082D49; background:#FCFAF3; text-align:center; }
+      #portfolio-startup .startup-copy { width:100%; max-width:680px; position:relative; z-index:1; }
+      #portfolio-startup .startup-mark { display:block; width:clamp(100px,11vw,152px); height:auto; margin:0 auto 24px; }
+      #portfolio-startup h1 { margin:0; color:#082D49; font:400 clamp(32px,5vw,62px)/1.2 Georgia,"Times New Roman",serif; letter-spacing:-.025em; }
+      #portfolio-startup .startup-track { width:144px; height:2px; background:#ead7a7; margin:36px auto 26px; overflow:hidden; border-radius:2px; }
+      #portfolio-startup .startup-track::after { content:""; display:block; width:44px; height:100%; background:#0055A4; border-radius:2px; animation:startup-travel 1.7s ease-in-out infinite alternate; }
+      #portfolio-startup .startup-status { margin:0; font-size:15px; line-height:1.8; letter-spacing:.18em; }
+      #portfolio-startup .startup-status span { display:block; margin-top:5px; color:#42617a; font-size:11px; letter-spacing:.17em; }
+      #portfolio-startup .startup-watermark { position:absolute; z-index:0; pointer-events:none; width:min(65vw,730px); height:auto; bottom:-7%; left:50%; transform:translateX(-50%) rotate(-8deg); opacity:.035; }
+      #portfolio-startup .startup-error { max-width:32em; margin:28px auto 0; font-size:14px; line-height:1.7; color:#082D49; }
+      #portfolio-startup .startup-error button { display:block; margin:14px auto 0; min-height:44px; padding:8px 20px; border:1px solid #0055A4; border-radius:6px; background:transparent; color:#0055A4; font:inherit; cursor:pointer; }
+      #portfolio-startup button:focus-visible { outline:2px solid #0055A4; outline-offset:3px; }
+      #portfolio-startup[data-state="error"] .startup-track { display:none; }
+      #portfolio-startup [hidden] { display:none !important; }
+      @keyframes startup-travel { from { transform:translateX(0); } to { transform:translateX(100px); } }
+      @media(max-width:600px) {
+        #portfolio-startup .startup-mark { width:112px; margin-bottom:22px; }
+        #portfolio-startup .startup-track { margin-top:30px; }
+        #portfolio-startup .startup-watermark { width:105vw; bottom:4%; }
+      }
+      @media(prefers-reduced-motion:reduce) { #portfolio-startup .startup-track::after { animation:none; transform:translateX(50px); } }
     </style>
     <script>
-      window.addEventListener('error', function (event) {
+      window.addEventListener('error', function(event) {
         if (!(event.target instanceof HTMLScriptElement) || event.target.type !== 'module') return;
         function showStartupError() {
-          const error = document.getElementById('startup-error');
-          if (!error) return;
-          error.hidden = false;
-          document.getElementById('startup-status').hidden = true;
-          if (location.protocol === 'file:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
-            document.getElementById('startup-local-help').hidden = false;
-          }
+          const screen=document.getElementById('portfolio-startup');
+          if (!screen) return;
+          screen.dataset.state='error';
+          document.getElementById('startup-error').hidden=false;
+          document.getElementById('startup-status').hidden=true;
         }
-        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', showStartupError, { once: true });
+        if (document.readyState==='loading') document.addEventListener('DOMContentLoaded',showStartupError,{once:true});
         else showStartupError();
-      }, true);
+      },true);
     </script>
     <script type="module" src="/src/main.jsx"></script>
   </head>
   <body>
     <div id="root">
-      <section id="hero" class="initial-hero">
-        <div class="hero-container">
-          <h2>我是</h2>
+      <section id="portfolio-startup" aria-label="作品集正在加载">
+        <svg class="startup-watermark" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 64">
+  <path d="M51 45C43 56 16 57 11 44 5 28 18 10 33 10c16 0 20 14 20 27 0 10 4 14 10 12 10-3 20-19 35-29 6-4 12-5 13-1 1 4-8 10-17 17L78 49c8 4 20 4 29 0" fill="none" stroke="#0055A4" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M107 49c3-1 5-3 7-5" fill="none" stroke="#D4A43A" stroke-width="7" stroke-linecap="round"/>
+</svg>
+        <div class="startup-copy">
+          <svg class="startup-mark" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 64">
+  <path d="M51 45C43 56 16 57 11 44 5 28 18 10 33 10c16 0 20 14 20 27 0 10 4 14 10 12 10-3 20-19 35-29 6-4 12-5 13-1 1 4-8 10-17 17L78 49c8 4 20 4 29 0" fill="none" stroke="#0055A4" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M107 49c3-1 5-3 7-5" fill="none" stroke="#D4A43A" stroke-width="7" stroke-linecap="round"/>
+</svg>
           <h1>Annabelle Zhu</h1>
-          <p>软件开发 · 产品设计 · 数据科学</p>
-          <p id="startup-status" class="startup-notice" role="status">Loading portfolio…</p>
-          <p id="startup-error" class="startup-notice startup-error" role="alert" hidden>
-            The portfolio could not load. Please refresh the page.
-            <span id="startup-local-help" hidden> For local development, run <code>npm run dev</code> and open the URL shown in the terminal.</span>
-          </p>
-          <noscript><p class="startup-notice startup-error">Please enable JavaScript to view the full portfolio.</p></noscript>
+          <div class="startup-track" aria-hidden="true"></div>
+          <p id="startup-status" class="startup-status" role="status">正在准备作品集<span lang="en">Loading portfolio</span></p>
+          <div id="startup-error" class="startup-error" role="alert" hidden>暂时未能加载作品集，请重试。<br><span lang="en">The portfolio could not load. Please try again.</span><button type="button" onclick="location.reload()">重新加载 / Reload</button></div>
+          <noscript><style>#startup-status,.startup-track {display:none!important}</style><p class="startup-error">请启用 JavaScript 以浏览完整作品集。<br>Please enable JavaScript to view the portfolio.</p></noscript>
         </div>
       </section>
     </div>
