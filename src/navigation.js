@@ -23,6 +23,7 @@ const views = {
   'XD-cupcakes': ['design', 'projects'],
   'XD-reverie': ['design', 'projects'],
   'XD-travel': ['design', 'projects'],
+  'ai-products': ['ai-products', 'projects'],
   services: ['data', 'projects'],
   'data-athub': ['data-athub', 'projects'],
   'data-visualization': ['data-visualization', 'projects'],

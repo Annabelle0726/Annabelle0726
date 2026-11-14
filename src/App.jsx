@@ -9,6 +9,7 @@ import WebProjects from './sections/WebProjects';
 import BelayCase from './sections/BelayCase';
 import DesignPortfolio from './sections/DesignPortfolio';
 import Projects from './sections/Projects';
+import AIProducts from './sections/AIProducts';
 import Contact from './sections/Contact';
 import useContentNavigation from './hooks/useContentNavigation';
 import Hero from './sections/Hero';
@@ -100,6 +101,7 @@ export default function App() {
     'web-belay': <BelayCase language={language} onNavigate={navigate} />,
     'web-somnia': <WebProjects language={language} projectId="web-somnia" onNavigate={navigate} />,
     design: <DesignPortfolio language={language} projectId={route.id} onNavigate={navigate} />,
+    'ai-products': <AIProducts language={language} onNavigate={navigate}/>,
     data: <Projects language={language} onNavigate={navigate}/>,
     'data-athub': <Projects language={language} projectId="data-athub" onNavigate={navigate}/>,
     'data-visualization': <Projects language={language} projectId="data-visualization" onNavigate={navigate}/>,
