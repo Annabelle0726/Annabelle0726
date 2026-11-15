@@ -4,6 +4,7 @@ import ProjectPagination from '../components/ProjectPagination';
 import ribbon from '../assets/hero-art.png';
 import tasteConcept from '../assets/ai-products/taste-concept-compact.webp';
 import tasteFlourish from '../assets/ai-products/wordmark-flourish.svg';
+import atelierCover from '../assets/ai-products/readme-atelier.webp';
 import './ai-products.css';
 
 function ProjectLink({ href, en, name, onNavigate }) {
@@ -85,6 +86,18 @@ export default function AIProducts({ language = 'zh', onNavigate }) {
             <p className="ai-project-facts">{en ? 'Skill design · Demo site published' : 'Skill 设计 · 演示站已上线'}</p>
             <ProjectLink href="#taste-studio-notes" en={en} onNavigate={onNavigate} name="Taste Studio"/>
           </div><TastePreview en={en}/>
+        </article>
+        <article className="ai-product-row" aria-labelledby="ai-atelier-title">
+          <div className="ai-product-copy"><p className="ai-product-number">03 <span/></p><h2 id="ai-atelier-title">README Atelier</h2>
+            <p className="ai-product-category">{en ? 'A README design Skill' : 'README 设计 Skill'}</p>
+            <p className="ai-product-description">{en ? 'Guide AI from a real repository to a README with a clear story: explore visual directions, then design the cover, illustrations and reading order, while keeping setup commands easy to copy.' : '从真实仓库出发，让 AI 探索不同的视觉方向，设计 README 的封面、正文配图与阅读顺序，同时保留可复制的安装命令。'}</p>
+            <p className="ai-project-facts">{en ? 'Skill · Covers, diagrams & motion' : 'Skill · 封面、图解与动效'}</p>
+            <ProjectLink href="#readme-atelier-notes" en={en} onNavigate={onNavigate} name="README Atelier"/>
+          </div>
+          <figure className="ai-preview ai-atelier">
+            <img src={atelierCover} alt={en ? 'README Atelier: three README visual directions for the Fieldnotes concept project.' : 'README Atelier：Fieldnotes 概念项目的三种 README 视觉方向。'} width="1672" height="941" loading="lazy"/>
+            <figcaption>{en ? 'One project, different ways to tell its story · Concept examples' : '一个项目，不同的讲述方式 · 概念示例'}</figcaption>
+          </figure>
         </article>
       </div>
       <ProjectPagination routeId="ai-products" en={en} onNavigate={onNavigate}/>

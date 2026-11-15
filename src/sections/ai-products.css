@@ -166,3 +166,8 @@
  .ai-product-list { margin-top:4px; }
  .ai-product-row:first-child { padding-top:0; }
 }
+
+.ai-atelier { background:var(--color-surface); }
+.ai-atelier > img { display:block; width:100%; height:auto; object-fit:contain; }
+.ai-atelier figcaption { padding:12px 16px; border-top:1px solid var(--color-border); font-size:11px; line-height:1.6; color:var(--color-text-secondary); }
+.ai-project-pending { display:inline-block; margin:0; padding:9px 14px; border:1px solid var(--color-border); border-radius:7px; font-size:13px; color:var(--color-text-secondary); }

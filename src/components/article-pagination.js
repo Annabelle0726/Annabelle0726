@@ -11,6 +11,7 @@ const articles = [
   ['taste-studio-notes', '审美会变，但我们始终向往美'],
   ['respecting-lives', '尊重每一种生活，也看见每一个人'],
   ['page-soul', '页面有了灵魂，是一种什么感觉？'],
+  ['readme-atelier-notes', '好项目，值得一份好读的 README'],
 ];
 
 export function articlePageLinks(routeId, en = false) {
