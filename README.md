@@ -2,7 +2,12 @@
   <a href="https://annabelle0726.github.io/Annabelle0726/#hero"><img src="assets/readme/showcase-cover.webp" width="800" alt="Annabelle’s Portfolio — a personal website for projects, writing and discoveries"></a>
 </p>
 
-<p align="center"><strong>React 19.2.4 · Vite 7.3.6 · JavaScript</strong><br>中文 / English</p>
+<p align="center">
+  <img src="assets/readme/icons/react.svg" width="24" height="24" alt="React"> <strong>React 19.2.4</strong> &nbsp; · &nbsp;
+  <img src="assets/readme/icons/vite.svg" width="24" height="24" alt="Vite"> <strong>Vite 7.3.6</strong> &nbsp; · &nbsp;
+  <img src="assets/readme/icons/javascript.svg" width="24" height="24" alt="JavaScript"> <strong>JavaScript</strong>
+  <br>中文 / English
+</p>
 
 <p align="center"><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
 
