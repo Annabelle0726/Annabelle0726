@@ -1,90 +1,106 @@
 <p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#hero"><img src="assets/readme/annabelle-zhu-silk-refined-7s.gif" width="100%" alt="Animated silk signature of Annabelle Zhu"></a>
+  <a href="https://annabelle0726.github.io/Annabelle0726/#hero"><img src="assets/readme/showcase-cover.webp" width="800" alt="Annabelle’s Portfolio — a personal website for projects, writing and discoveries"></a>
 </p>
 
-<h1 align="center">Annabelle Zhu</h1>
-<p align="center"><strong>Software development · Product design · Data science</strong></p>
-<p align="center">A space for my work, writing, and discoveries from learning and creating.</p>
+<p align="center"><strong>React 19.2.4 · Vite 7.3.6 · JavaScript</strong><br>中文 / English</p>
+
 <p align="center"><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
-<p align="center"><a href="https://annabelle0726.github.io/Annabelle0726/">Explore the portfolio ↗</a> · <a href="#selected-work">Selected work</a> · <a href="#run-locally">Run locally</a> · <a href="#get-in-touch">Get in touch</a></p>
+
+**Annabelle Zhu’s personal website** brings together products I build, ideas I write about, and discoveries I collect. This README is a guide to the site; visit the pages for project stories, interface details, and interactions.
+
+Use the sidebar to move between pages. The main pages are available in Chinese and English; WeChat articles retain their Chinese originals.
+
+[Home](https://annabelle0726.github.io/Annabelle0726/#hero) · [About](https://annabelle0726.github.io/Annabelle0726/#about) · [Projects](https://annabelle0726.github.io/Annabelle0726/#portfolio) · [Writing](https://annabelle0726.github.io/Annabelle0726/#agency-bloom) · [Inspiration](https://annabelle0726.github.io/Annabelle0726/#models) · [Contact](https://annabelle0726.github.io/Annabelle0726/#contact)
+
+## 01 / Full-stack projects
+
+From an idea to a working experience: a WeChat mini program, an AI learning tool, and a reading-management application.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React-19.2.4-0055A4?style=flat-square&amp;logo=react&amp;logoColor=white" alt="React 19.2.4">
-  <img src="https://img.shields.io/badge/Vite-7.3.6-007E91?style=flat-square&amp;logo=vite&amp;logoColor=white" alt="Vite 7.3.6">
-  <img src="https://img.shields.io/badge/JavaScript-ES_Modules-082D49?style=flat-square" alt="JavaScript ES Modules">
-  <img src="https://img.shields.io/badge/Content-ZH_%2F_EN-B67B08?style=flat-square" alt="Chinese and English content">
+  <a href="https://annabelle0726.github.io/Annabelle0726/#portfolio"><img src="assets/readme/showcase-fullstack.webp" width="800" alt="Portfolio previews for Agency Bloom, Belay and Somnia Library: opening, practice workspace and bookshelf"></a>
 </p>
 
-This is the source for my personal portfolio: a place to explore the products I build, the interfaces I work on, and the questions I investigate through data. It also brings together my writing, reading notes, and the tools I use along the way.
+| Project | Inside the site | My involvement |
+| --- | --- | --- |
+| [Agency Bloom](https://annabelle0726.github.io/Annabelle0726/#web-agency-bloom) | A mini program for exploring, choosing and taking action; UI details and a product demo | Independent product conception, interaction, frontend/backend development and iteration |
+| [Belay](https://annabelle0726.github.io/Annabelle0726/#web-belay) | AI learning scenarios, the Sol data-science workspace and its feedback flow | Collaboration: interface work, conversation persistence, access and budget management |
+| [Somnia Library](https://annabelle0726.github.io/Annabelle0726/#web-somnia) | A personal library, book browsing and reading management | Adapted from Reverie, focusing on interfaces, authentication and mobile navigation |
 
-The site pairs sapphire blue, turquoise, and champagne gold with a warm paper background. Sidebar navigation opens individual content views, with Chinese and English available across the main portfolio pages. WeChat articles retain their Chinese originals.
 
-## Selected work
+## 02 / UI/UX design
 
-### 01 / Full-stack projects
+Interface studies exploring how choosing, browsing and feedback shape everyday interactions.
 
 <p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#portfolio"><img src="assets/readme/web-design.webp" width="100%" alt="Full-stack projects: Agency Bloom, Belay and Somnia Library"></a>
+  <a href="https://annabelle0726.github.io/Annabelle0726/#XD"><img src="assets/readme/showcase-ux.webp" width="800" alt="Cupcakes landing page, Reverie Reads reading page and Travel Discovery destination cards"></a>
 </p>
 
-**[Agency Bloom](https://annabelle0726.github.io/Annabelle0726/#web-agency-bloom)** — An independent WeChat mini program for exploring possibilities, considering choices, and taking a next step. My work spans product conception, interaction design, front-end and back-end development, and iteration. The case study includes interface details and a product demo.
+| Project | Interface & interaction | Context |
+| --- | --- | --- |
+| [Cupcakes](https://annabelle0726.github.io/Annabelle0726/#XD-cupcakes) | Daily-flavor reveal, flavor calendar and clear state feedback | Web interaction implementation using Sprinkles materials |
+| [Reverie Reads / Midniht](https://annabelle0726.github.io/Annabelle0726/#XD-reverie) | A reading flow connecting collecting, discovery and planning | Collaborative support and focused improvements; screens show the wider product |
+| [Travel Discovery](https://annabelle0726.github.io/Annabelle0726/#XD-travel) | Destination cards, travel preferences and changing a selection | Course prototype using Marriott Homes & Villas materials; not commissioned by the brand |
 
-**[Belay](https://annabelle0726.github.io/Annabelle0726/#web-belay)** — A collaborative AI learning tool. My contributions cover interface work, saving and restoring conversations, and access and budget management. The portfolio shows the Sol data-science learning workspace and its feedback flow.
 
-**[Somnia Library](https://annabelle0726.github.io/Annabelle0726/#web-somnia)** — A reading-management application developed from Reverie. My work focuses on the home and book interfaces, authentication experience, and mobile navigation.
+## 03 / AI products
 
-### 02 / UX/UI design
+Tools and skills that bring AI into job searching, interface design and README communication.
 
 <p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#XD"><img src="assets/readme/ux-ui.webp" width="100%" alt="UX/UI showcase: Cupcakes, Reverie Reads and Travel Discovery"></a>
+  <a href="https://annabelle0726.github.io/Annabelle0726/#ai-products"><img src="assets/readme/showcase-ai.webp" width="800" alt="AI products page: Waymark concept board, Taste Studio design directions and README Atelier concept examples"></a>
 </p>
 
-- **Cupcakes** — Web interactions centered on a daily-flavor reveal and clear visual feedback, using Sprinkles brand and product materials.
-- **Reverie Reads / Midniht** — Collaborative development support and focused improvements. The displayed screens provide the wider product context; they do not imply sole authorship.
-- **Travel Discovery** — A course prototype exploring destination cards and preference selection, using Marriott Homes & Villas materials. It is not commissioned work for Marriott.
+| Project | Purpose | What is shown |
+| --- | --- | --- |
+| [Waymark](https://annabelle0726.github.io/Annabelle0726/#waymark-notes) | Jobs, applications and interview preparation; AI reads approved excerpts, and message-driven updates require confirmation | Locally running product; the page includes a concept demo with sample roles |
+| [Taste Studio](https://annabelle0726.github.io/Annabelle0726/#taste-studio-notes) | Compare design directions, then refine an interface through preferences and feedback | UI design Skill with a published demo site |
+| [README Atelier](https://annabelle0726.github.io/Annabelle0726/#ai-products) | Shape a repository story, cover, illustrations and reading order | README design Skill; a separate project link is pending |
 
-[Explore the interface studies →](https://annabelle0726.github.io/Annabelle0726/#XD)
 
-### 03 / Data & AI
+## 04 / Data & AI
+
+Analysis, visualization and clear explanations, with the limits of each method and conclusion kept visible.
 
 <p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#services"><img src="assets/readme/data-ai.webp" width="100%" alt="Data and AI — analytical projects, visualization and decision-making"></a>
+  <a href="https://annabelle0726.github.io/Annabelle0726/#services"><img src="assets/readme/showcase-data.webp" width="800" alt="AtHub model comparison, public-data Sankey chart and data-center siting framework"></a>
 </p>
 
-- **AtHub anomaly detection** — Financial time-series exploration with Python, scikit-learn, SHAP, and Quarto; model comparison, interpretation, and the limits of prediction.
-- **Public data visualization** — Visual stories about trade, environmental records, and occupational safety, built with R and visualization libraries.
-- **Sustainable data-center siting** — An analysis of energy, cost, and regional constraints using SQL, Tableau, and GIS.
+| Project | Focus | Tools |
+| --- | --- | --- |
+| [AtHub anomaly detection](https://annabelle0726.github.io/Annabelle0726/#data-athub) | Financial time series, model comparison, interpretation and prediction limits | Python · scikit-learn · SHAP · Quarto |
+| [Public data visualization](https://annabelle0726.github.io/Annabelle0726/#data-visualization) | Trends and relationships in trade, environmental records and occupational safety | R · dplyr · ggplot2 · ggsankey |
+| [Sustainable data-center siting](https://annabelle0726.github.io/Annabelle0726/#data-energy) | Siting tradeoffs across energy, cost and regional constraints | SQL · Tableau · GIS |
 
-[Read the project context and original analyses →](https://annabelle0726.github.io/Annabelle0726/#services)
 
-## Writing & inspiration
+## Beyond the projects
+
+The site also holds an introduction to me, an ongoing collection of essays, and tools and discoveries worth keeping.
 
 <p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#models"><img src="assets/readme/inspiration.webp" width="100%" alt="Inspiration archive — a blue notebook, textured paper and a gold bookmark"></a>
+  <a href="https://annabelle0726.github.io/Annabelle0726/#about"><img src="assets/readme/showcase-pages.webp" width="800" alt="Real page previews: About, a WeChat essay and Contact"></a>
 </p>
 
-I keep articles, tools, and ideas that make me stop and think. The archive includes how I use ChatGPT and Claude Code, a selection of working methods and skills, and reading notes that separate what I have learned from what I still want to test.
+| Page | What you will find |
+| --- | --- |
+| [Home](https://annabelle0726.github.io/Annabelle0726/#hero) | The site’s blue-and-gold identity, a short introduction and main entry points |
+| [About](https://annabelle0726.github.io/Annabelle0726/#about) | An introduction and chapters on curiosity and judgment, writing and expression, and aesthetics and inspiration |
+| [WeChat essays](https://annabelle0726.github.io/Annabelle0726/#agency-bloom) | Chinese essays on choice, growth, design and AI practice; continue through the sidebar and article navigation |
+| [Inspiration](https://annabelle0726.github.io/Annabelle0726/#models) | Models, tools, skills, [teams and quotes](https://annabelle0726.github.io/Annabelle0726/#quotes), and [reading notes](https://annabelle0726.github.io/Annabelle0726/#notes-felix) |
+| [Contact](https://annabelle0726.github.io/Annabelle0726/#contact) | Email, social profiles, location and contact details |
 
-[Models & tools](https://annabelle0726.github.io/Annabelle0726/#models) · [Teams & quotes](https://annabelle0726.github.io/Annabelle0726/#quotes) · [Reading notes](https://annabelle0726.github.io/Annabelle0726/#notes-felix)
+
+The thumbnails are newly captured from the locally running portfolio, including its interaction demos and labeled concept examples. The cover is conceptual artwork. Select a category image or project name to explore the full pages.
 
 <details>
-<summary><strong>Agency Bloom · Grow at your own pace</strong></summary>
+<summary>View the page tour and signature animation</summary>
 
-<p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#agency-bloom"><img src="assets/readme/agency-bloom.webp" width="360" alt="Agency Bloom — a young plant in the morning light"></a>
-</p>
+A 12-second tour composed from real page screenshots, not a continuous screen recording.
 
-The essays behind Agency Bloom explore choice, personal agency, and making room for a life of our own.
+<p align="center"><picture><source media="(max-width: 600px)" srcset="assets/readme/site-tour-mobile.gif"><img src="assets/readme/site-tour.gif" width="560" alt="Portfolio page tour: project index, Agency Bloom case study and UI/UX studies"></picture></p>
 
-[Read the Chinese essays →](https://annabelle0726.github.io/Annabelle0726/#agency-bloom)
+[Static preview](assets/readme/site-preview.png) · [Mobile preview](assets/readme/site-preview-mobile.png) · [Signature animation](assets/readme/annabelle-zhu-silk-refined-7s.gif)
 
 </details>
-
-*The gallery uses supplied presentation artwork. Open the portfolio for the current interfaces, project descriptions, and interaction demos.*
-
-<p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#hero"><img src="assets/readme/portfolio-cover.webp" width="100%" alt="Annabelle Zhu — software development, product design and data science"></a>
-</p>
 
 ## Run locally
 
@@ -97,13 +113,23 @@ npm install
 npm run dev
 ```
 
-Open the URL printed by Vite. For a phone on the same network:
+Open the URL printed by Vite.
+
+<details>
+<summary>View on a phone on the same network</summary>
+
+For a phone on the same network:
 
 ```bash
 npm run dev -- --host 0.0.0.0
 ```
 
 Use the computer's LAN address and the port printed in the terminal.
+
+</details>
+
+<details>
+<summary>Build, publish and repository structure</summary>
 
 ## Build & publish
 
@@ -135,13 +161,11 @@ The main site uses React and Vite. Linked historical examples remain independent
 
 </details>
 
+</details>
+
 ## Get in touch
 
-<p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#contact"><img src="assets/readme/contact.webp" width="300" alt="A letter from Annabelle Zhu, surrounded by blue silk and gold details"></a>
-</p>
-
-For work opportunities, collaboration, or an interesting idea to share:
+For projects, collaboration, or an interesting idea to share:
 
 **[0realannabelle0@gmail.com](mailto:0realannabelle0@gmail.com)**
 

@@ -1,90 +1,106 @@
 <p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#hero"><img src="assets/readme/annabelle-zhu-silk-refined-7s.gif" width="100%" alt="Annabelle Zhu 的丝带签名动画"></a>
+  <a href="https://annabelle0726.github.io/Annabelle0726/#hero"><img src="assets/readme/showcase-cover.webp" width="800" alt="Annabelle’s Portfolio — 作品、文字与灵感的个人网站"></a>
 </p>
 
-<h1 align="center">Annabelle Zhu</h1>
-<p align="center"><strong>软件开发 · 产品设计 · 数据科学</strong></p>
-<p align="center">记录学习与创作中的想法，这里有我的作品、文字，以及一些想与你分享的发现。</p>
+<p align="center"><strong>React 19.2.4 · Vite 7.3.6 · JavaScript</strong><br>中文 / English</p>
+
 <p align="center"><a href="README.md">English</a> · <strong>简体中文</strong></p>
-<p align="center"><a href="https://annabelle0726.github.io/Annabelle0726/">访问作品集 ↗</a> · <a href="#精选作品">精选作品</a> · <a href="#本地运行">本地运行</a> · <a href="#联系我">联系我</a></p>
+
+这里是 **Annabelle Zhu 的个人网站**：从做出来的产品，到写下来的思考，再到日常收集的灵感。README 是一份浏览导览，完整的项目过程、页面细节和交互都在网站里。
+
+通过侧栏在不同页面之间切换。主要页面支持中英文，公众号文章保留中文原文。
+
+[首页](https://annabelle0726.github.io/Annabelle0726/#hero) · [About](https://annabelle0726.github.io/Annabelle0726/#about) · [项目](https://annabelle0726.github.io/Annabelle0726/#portfolio) · [公众号](https://annabelle0726.github.io/Annabelle0726/#agency-bloom) · [灵感收藏](https://annabelle0726.github.io/Annabelle0726/#models) · [Contact](https://annabelle0726.github.io/Annabelle0726/#contact)
+
+## 01 / 全栈项目
+
+产品如何从想法变成可以使用的体验：微信小程序、AI 学习工具与阅读管理应用。
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React-19.2.4-0055A4?style=flat-square&amp;logo=react&amp;logoColor=white" alt="React 19.2.4">
-  <img src="https://img.shields.io/badge/Vite-7.3.6-007E91?style=flat-square&amp;logo=vite&amp;logoColor=white" alt="Vite 7.3.6">
-  <img src="https://img.shields.io/badge/JavaScript-ES_Modules-082D49?style=flat-square" alt="JavaScript ES Modules">
-  <img src="https://img.shields.io/badge/Content-ZH_%2F_EN-B67B08?style=flat-square" alt="Chinese and English content">
+  <a href="https://annabelle0726.github.io/Annabelle0726/#portfolio"><img src="assets/readme/showcase-fullstack.webp" width="800" alt="Agency Bloom、Belay 与 Somnia Library：作品集页面中的开场、练习台与书架预览"></a>
 </p>
 
-这是我的个人作品集网站源码。这里收录了我开发的产品、参与的界面设计，以及通过数据探索的问题，也整理了我的写作、阅读笔记和日常使用的工具。
+| 项目 | 网站里可以看到 | 参与方式 |
+| --- | --- | --- |
+| [Agency Bloom](https://annabelle0726.github.io/Annabelle0726/#web-agency-bloom) | 探索、选择与行动的微信小程序；界面细节与产品演示 | 独立完成产品构思、交互、前后端开发与迭代 |
+| [Belay](https://annabelle0726.github.io/Annabelle0726/#web-belay) | AI 学习场景、Sol 数据科学工作区与反馈流程 | 协作开发：界面、会话保存与恢复、访问和预算管理 |
+| [Somnia Library](https://annabelle0726.github.io/Annabelle0726/#web-somnia) | 个人书架、书籍浏览与阅读管理体验 | 基于 Reverie 二次开发，聚焦界面、认证与移动导航 |
 
-网站以宝石蓝、湖水青和香槟金搭配暖纸色背景，通过侧栏进入不同内容视图。主要作品集页面提供中英文切换，公众号文章保留中文原文。
 
-## 精选作品
+## 02 / UI/UX 设计
 
-### 01 / 全栈项目
+从日常操作出发，观察选择、浏览和反馈如何影响体验。
 
 <p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#portfolio"><img src="assets/readme/web-design.webp" width="100%" alt="全栈项目作品：Agency Bloom、Belay 与 Somnia Library"></a>
+  <a href="https://annabelle0726.github.io/Annabelle0726/#XD"><img src="assets/readme/showcase-ux.webp" width="800" alt="Cupcakes 项目落地页、Reverie Reads 阅读页面与 Travel Discovery 目的地卡片"></a>
 </p>
 
-**[Agency Bloom](https://annabelle0726.github.io/Annabelle0726/#web-agency-bloom)** — 独立开发的微信小程序，围绕探索、选择与行动，帮助人们梳理想法、比较可能，并迈出下一步。我的工作覆盖产品构思、交互设计、前后端开发与持续迭代。项目介绍包含界面细节和产品演示。
+| 项目 | 界面与交互 | 项目背景 |
+| --- | --- | --- |
+| [Cupcakes](https://annabelle0726.github.io/Annabelle0726/#XD-cupcakes) | 今日口味揭晓、口味日历与清楚的状态反馈 | 参与网页交互实现；使用 Sprinkles 素材 |
+| [Reverie Reads / Midniht](https://annabelle0726.github.io/Annabelle0726/#XD-reverie) | 收藏、发现与阅读计划之间的浏览路径 | 协作支持与局部改进；展示整体产品场景 |
+| [Travel Discovery](https://annabelle0726.github.io/Annabelle0726/#XD-travel) | 目的地卡片、旅行偏好与重新选择 | 课程原型；使用 Marriott Homes & Villas 素材，非品牌委托 |
 
-**[Belay](https://annabelle0726.github.io/Annabelle0726/#web-belay)** — 协作开发的 AI 学习工具。我参与界面、会话保存与恢复，以及访问和预算管理。作品集展示了 Sol 数据科学学习工作区及其反馈流程。
 
-**[Somnia Library](https://annabelle0726.github.io/Annabelle0726/#web-somnia)** — 基于 Reverie 二次开发的阅读管理应用。我的工作集中在首页与书籍界面、认证体验和移动端导航。
+## 03 / AI 产品
 
-### 02 / UX/UI 设计
+围绕求职、界面设计和 README 表达，让 AI 进入具体的工作流程。
 
 <p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#XD"><img src="assets/readme/ux-ui.webp" width="100%" alt="UX/UI 作品：Cupcakes、Reverie Reads 与 Travel Discovery"></a>
+  <a href="https://annabelle0726.github.io/Annabelle0726/#ai-products"><img src="assets/readme/showcase-ai.webp" width="800" alt="AI 产品页：Waymark 求职看板概念演示、Taste Studio 设计方向与 README Atelier 概念案例"></a>
 </p>
 
-- **Cupcakes** — 参与网页交互实现，重点是「今日口味」的点击揭晓与状态反馈；使用 Sprinkles 品牌及产品素材。
-- **Reverie Reads / Midniht** — 以协作形式参与开发支持和局部改进。展示的界面用于说明产品整体场景，不代表全部由我独立完成。
-- **Travel Discovery** — 围绕目的地卡片和偏好选择展开的课程原型，使用 Marriott Homes & Villas 素材，非 Marriott 委托项目。
+| 项目 | 用途 | 当前呈现 |
+| --- | --- | --- |
+| [Waymark](https://annabelle0726.github.io/Annabelle0726/#waymark-notes) | 集中管理岗位、投递进度与面试准备；AI 解读经确认发送的摘录，消息更新需确认 | 本地运行的产品；页面提供示例岗位概念演示 |
+| [Taste Studio](https://annabelle0726.github.io/Annabelle0726/#taste-studio-notes) | 先比较多个设计方向，再依据偏好与反馈细化界面 | UI 设计 Skill；演示站已上线 |
+| [README Atelier](https://annabelle0726.github.io/Annabelle0726/#ai-products) | 从真实仓库梳理故事，设计封面、配图和阅读顺序 | README 设计 Skill；独立项目链接待补充 |
 
-[查看界面与交互案例 →](https://annabelle0726.github.io/Annabelle0726/#XD)
 
-### 03 / 数据与 AI
+## 04 / 数据与 AI
+
+用分析、图表与清楚的解释理解问题，也保留方法与结论的边界。
 
 <p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#services"><img src="assets/readme/data-ai.webp" width="100%" alt="数据与 AI：数据分析、可视化与决策研究"></a>
+  <a href="https://annabelle0726.github.io/Annabelle0726/#services"><img src="assets/readme/showcase-data.webp" width="800" alt="AtHub 模型比较、公共数据桑基图与可持续数据中心选址框架"></a>
 </p>
 
-- **AtHub 异常检测** — 使用 Python、scikit-learn、SHAP 与 Quarto 探索金融时间序列，比较模型表现、解释特征贡献，并审视预测的边界。
-- **公共数据可视化** — 使用 R 及可视化工具，将贸易、环境记录与职业安全数据组织成可阅读的趋势和关系。
-- **可持续数据中心选址** — 使用 SQL、Tableau 与 GIS，分析能源、成本和地域条件之间的取舍。
+| 项目 | 分析内容 | 工具 |
+| --- | --- | --- |
+| [AtHub 异常检测](https://annabelle0726.github.io/Annabelle0726/#data-athub) | 金融时间序列、模型比较、特征解释与预测边界 | Python · scikit-learn · SHAP · Quarto |
+| [公共数据可视化](https://annabelle0726.github.io/Annabelle0726/#data-visualization) | 贸易、环境记录与职业安全的趋势和关系 | R · dplyr · ggplot2 · ggsankey |
+| [可持续数据中心选址](https://annabelle0726.github.io/Annabelle0726/#data-energy) | 能源、成本与地域条件之间的选址取舍 | SQL · Tableau · GIS |
 
-[了解项目背景与原始分析 →](https://annabelle0726.github.io/Annabelle0726/#services)
 
-## 写作与灵感
+## 不止作品：网站里的其他页面
+
+作品之外，还有关于我的介绍、持续更新的文章，以及值得留下的工具与发现。
 
 <p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#models"><img src="assets/readme/inspiration.webp" width="100%" alt="灵感收藏：蓝色笔记本、纸张与金色书签"></a>
+  <a href="https://annabelle0726.github.io/Annabelle0726/#about"><img src="assets/readme/showcase-pages.webp" width="800" alt="真实页面预览：About 关于我、微信公众号文章与 Contact 联系我"></a>
 </p>
 
-我会留下让我停下来思考的文章、工具与想法。这里包括我使用 ChatGPT 和 Claude Code 的方式、常用的方法与 Skills，以及阅读中的理解、疑问和想亲自验证的事情。
+| 页面 | 可以浏览什么 |
+| --- | --- |
+| [Home / 首页](https://annabelle0726.github.io/Annabelle0726/#hero) | 网站的蓝金视觉、简短介绍和主要入口 |
+| [About / 关于我](https://annabelle0726.github.io/Annabelle0726/#about) | 个人介绍，以及好奇与判断、写作与表达、审美与灵感三个章节 |
+| [微信公众号](https://annabelle0726.github.io/Annabelle0726/#agency-bloom) | 关于选择、成长、设计与 AI 实践的中文文章；通过侧栏和篇末导航继续阅读 |
+| [灵感收藏](https://annabelle0726.github.io/Annabelle0726/#models) | 模型与工具、常用 Skills、[团队与语录](https://annabelle0726.github.io/Annabelle0726/#quotes)，以及[阅读笔记](https://annabelle0726.github.io/Annabelle0726/#notes-felix) |
+| [Contact / 联系我](https://annabelle0726.github.io/Annabelle0726/#contact) | 邮箱、社交账号、所在城市与联系方式 |
 
-[模型与工具](https://annabelle0726.github.io/Annabelle0726/#models) · [团队与语录](https://annabelle0726.github.io/Annabelle0726/#quotes) · [阅读笔记](https://annabelle0726.github.io/Annabelle0726/#notes-felix)
+
+以上缩略图重新截取自本地运行的作品集，展示实际页面及其中的交互演示或概念示例；封面为概念插画。点击分类图片或项目名称，可进入网站查看完整内容。
 
 <details>
-<summary><strong>Agency Bloom · 按照自己的节奏，慢慢生长</strong></summary>
+<summary>展开真实页面导览与签名动画</summary>
 
-<p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#agency-bloom"><img src="assets/readme/agency-bloom.webp" width="360" alt="Agency Bloom：晨光中正在生长的幼苗"></a>
-</p>
+由实际页面截图编排的 12 秒导览，非连续操作录屏。
 
-围绕选择、自主性与生活方向，记录 Agency Bloom 背后的思考。
+<p align="center"><picture><source media="(max-width: 600px)" srcset="assets/readme/site-tour-mobile.gif"><img src="assets/readme/site-tour.gif" width="560" alt="Portfolio page tour: project index, Agency Bloom case study and UI/UX studies"></picture></p>
 
-[阅读公众号文章 →](https://annabelle0726.github.io/Annabelle0726/#agency-bloom)
+[静态预览](assets/readme/site-preview.png) · [手机预览](assets/readme/site-preview-mobile.png) · [查看签名动画](assets/readme/annabelle-zhu-silk-refined-7s.gif)
 
 </details>
-
-*以上配图为作品集展示素材。当前界面、项目说明与交互演示，请进入网站查看。*
-
-<p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#hero"><img src="assets/readme/portfolio-cover.webp" width="100%" alt="Annabelle Zhu 个人作品集：软件开发、产品设计与数据科学"></a>
-</p>
 
 ## 本地运行
 
@@ -97,13 +113,23 @@ npm install
 npm run dev
 ```
 
-打开 Vite 在终端中显示的地址。如需在同一网络下用手机查看：
+打开 Vite 在终端中显示的地址。
+
+<details>
+<summary>在同一网络下用手机查看</summary>
+
+如需用手机查看：
 
 ```bash
 npm run dev -- --host 0.0.0.0
 ```
 
 在手机浏览器中使用电脑的局域网 IP 和终端显示的端口。
+
+</details>
+
+<details>
+<summary>构建、发布与仓库结构</summary>
 
 ## 构建与发布
 
@@ -135,13 +161,11 @@ docs/                   项目与视觉规范
 
 </details>
 
+</details>
+
 ## 联系我
 
-<p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#contact"><img src="assets/readme/contact.webp" width="300" alt="Annabelle Zhu 的信笺，搭配蓝色丝带与金色细节"></a>
-</p>
-
-如果你想聊聊工作机会、合作，或分享有意思的想法，欢迎给我写邮件。
+欢迎聊聊项目、合作，或分享有意思的想法。
 
 **[0realannabelle0@gmail.com](mailto:0realannabelle0@gmail.com)**
 
