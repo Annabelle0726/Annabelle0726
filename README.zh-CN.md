@@ -67,7 +67,7 @@
 用分析、图表与清楚的解释理解问题，也保留方法与结论的边界。
 
 <p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#services"><img src="assets/readme/showcase-data.webp" width="800" alt="AtHub 模型比较、公共数据桑基图与可持续数据中心选址框架"></a>
+  <a href="https://annabelle0726.github.io/Annabelle0726/#services"><img src="assets/readme/showcase-data.webp" width="800" alt="原始模型比较图、公共数据流向图与数据中心选址框架"></a>
 </p>
 
 | 项目 | 分析内容 | 工具 |
@@ -94,7 +94,7 @@
 | [Contact / 联系我](https://annabelle0726.github.io/Annabelle0726/#contact) | 邮箱、社交账号、所在城市与联系方式 |
 
 
-以上缩略图重新截取自本地运行的作品集，展示实际页面及其中的交互演示或概念示例；封面为概念插画。点击分类图片或项目名称，可进入网站查看完整内容。
+项目卡片使用真实页面局部与原始分析图表，经过裁切和轻量排版；选址卡片展示页面中的决策框架。封面为概念插画。点击分类图片或项目名称，可进入网站查看完整内容。
 
 <details>
 <summary>展开真实页面导览与签名动画</summary>

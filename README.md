@@ -67,7 +67,7 @@ Tools and skills that bring AI into job searching, interface design and README c
 Analysis, visualization and clear explanations, with the limits of each method and conclusion kept visible.
 
 <p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#services"><img src="assets/readme/showcase-data.webp" width="800" alt="AtHub model comparison, public-data Sankey chart and data-center siting framework"></a>
+  <a href="https://annabelle0726.github.io/Annabelle0726/#services"><img src="assets/readme/showcase-data.webp" width="800" alt="Original model-comparison and public-data figures, and the data-center siting framework"></a>
 </p>
 
 | Project | Focus | Tools |
@@ -94,7 +94,7 @@ The site also holds an introduction to me, an ongoing collection of essays, and 
 | [Contact](https://annabelle0726.github.io/Annabelle0726/#contact) | Email, social profiles, location and contact details |
 
 
-The thumbnails are newly captured from the locally running portfolio, including its interaction demos and labeled concept examples. The cover is conceptual artwork. Select a category image or project name to explore the full pages.
+Project cards use cropped page previews and original analysis figures with light layout refinements. The siting card shows the page’s decision framework. The cover is conceptual artwork. Select a category image or project name to explore the full pages.
 
 <details>
 <summary>View the page tour and signature animation</summary>
