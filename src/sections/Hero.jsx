@@ -1,6 +1,7 @@
 import React from 'react';
 import './hero.css';
 import HeroRibbonScene from '../components/HeroRibbonScene';
+import HeroBackdrop from '../components/HeroBackdrop';
 import { HeroPortrait, HeroProjectAction, HeroSocials, HeroArrow } from '../components/HeroMobile';
 import './hero-mobile.css';
 import './hero-intro.css';
@@ -26,6 +27,7 @@ function HeroCopy({ language, onNavigate }) {
 
 export default function Hero({ language, onNavigate }) {
   return <section id="hero" className="hero-opened" lang={language === 'zh' ? 'zh-CN' : 'en'}>
+    <HeroBackdrop />
     <HeroRibbonScene />
     <HeroCopy key={language} language={language} onNavigate={onNavigate} />
     <HeroSocials language={language} />
