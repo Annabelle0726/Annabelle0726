@@ -5,6 +5,7 @@ import ribbon from '../assets/hero-art.png';
 import tasteConcept from '../assets/ai-products/taste-concept-compact.webp';
 import tasteFlourish from '../assets/ai-products/wordmark-flourish.svg';
 import atelierCover from '../assets/ai-products/readme-atelier.webp';
+import specCover from '../assets/article-spec-to-tested-code/0.webp';
 import './ai-products.css';
 
 function ProjectLink({ href, en, name, onNavigate }) {
@@ -97,6 +98,18 @@ export default function AIProducts({ language = 'zh', onNavigate }) {
           <figure className="ai-preview ai-atelier">
             <img src={atelierCover} alt={en ? 'README Atelier: three README visual directions for the Fieldnotes concept project.' : 'README Atelier：Fieldnotes 概念项目的三种 README 视觉方向。'} width="1672" height="941" loading="lazy"/>
             <figcaption>{en ? 'One project, different ways to tell its story · Concept examples' : '一个项目，不同的讲述方式 · 概念示例'}</figcaption>
+          </figure>
+        </article>
+        <article className="ai-product-row ai-product-row-reverse" aria-labelledby="ai-spec-title">
+          <div className="ai-product-copy"><p className="ai-product-number">04 <span/></p><h2 id="ai-spec-title">Spec to Tested Code</h2>
+            <p className="ai-product-category">{en ? 'An AI development & verification Skill' : 'AI 开发与验证 Skill'}</p>
+            <p className="ai-product-description">{en ? 'Connect requirements, behavior scenarios and test-driven implementation. Guide AI to clarify business rules, verify the result and support completion claims with actual evidence.' : '串联需求规格、行为场景与测试驱动实现，引导 AI 先明确业务约定，再验证实现，让“做完了”对应到可以复查的证据。'}</p>
+            <p className="ai-project-facts">Agent Skill · SDD / BDD / TDD</p>
+            <ProjectLink href="#spec-to-tested-code-notes" en={en} onNavigate={onNavigate} name="Spec to Tested Code"/>
+          </div>
+          <figure className="ai-preview ai-atelier">
+            <img src={specCover} alt={en ? 'Spec to Tested Code article cover: when AI says it is done, ask how it knows.' : '《AI 说「做完了」，我想再问一句》文章封面'} width="1080" height="599" loading="lazy"/>
+            <figcaption>{en ? 'From business rules to verifiable implementation' : '把业务约定，变成经得起验证的实现'}</figcaption>
           </figure>
         </article>
       </div>
