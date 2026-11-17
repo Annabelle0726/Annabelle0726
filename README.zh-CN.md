@@ -49,10 +49,10 @@
 
 ## 03 / AI 产品
 
-围绕求职、界面设计和 README 表达，让 AI 进入具体的工作流程。
+围绕求职、界面设计、README 表达与开发验证，让 AI 进入具体的工作流程。
 
 <p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#ai-products"><img src="assets/readme/showcase-ai.webp" width="800" alt="AI 产品页：Waymark 求职看板概念演示、Taste Studio 设计方向与 README Atelier 概念案例"></a>
+  <a href="https://annabelle0726.github.io/Annabelle0726/#ai-products"><img src="assets/readme/showcase-ai.webp" width="800" alt="AI 产品页：Waymark 求职看板概念演示、Taste Studio 设计方向、README Atelier 概念案例与 Spec to Tested Code 开发验证 Skill"></a>
 </p>
 
 | 项目 | 用途 | 当前呈现 |
@@ -60,6 +60,7 @@
 | [Waymark](https://annabelle0726.github.io/Annabelle0726/#waymark-notes) | 集中管理岗位、投递进度与面试准备；AI 解读经确认发送的摘录，消息更新需确认 | 本地运行的产品；页面提供示例岗位概念演示 |
 | [Taste Studio](https://annabelle0726.github.io/Annabelle0726/#taste-studio-notes) | 先比较多个设计方向，再依据偏好与反馈细化界面 | UI 设计 Skill；演示站已上线 |
 | [README Atelier](https://annabelle0726.github.io/Annabelle0726/#ai-products) | 从真实仓库梳理故事，设计封面、配图和阅读顺序 | README 设计 Skill；独立项目链接待补充 |
+| [Spec to Tested Code](https://annabelle0726.github.io/Annabelle0726/#spec-to-tested-code-notes) | 串联需求规格、行为场景与测试驱动实现，让完成结论有可复查的验证证据 | AI 开发与验证 Skill · SDD / BDD / TDD；[项目仓库](https://github.com/Annabelle0726/spec-to-tested-code) |
 
 
 ## 04 / 数据与 AI

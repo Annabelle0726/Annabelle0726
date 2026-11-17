@@ -24,3 +24,5 @@
 2026-11-16：项目画框改为铺满取景。data-art.png 为新生成的三联概念插画，分别表达金融异常信号、公共数据流向和可持续数据中心选址；并非真实图表或分析结果。最终缩略图保留 800×196 的展示尺寸。
 
 最新调整：停用 data-art.png 概念插画。数据卡片恢复原始 athub-4.png、viz-3.png 图表与页面选址框架，采用淡色底板和轻阴影。Belay 使用已有 success.webp 真实界面，文章使用原始开篇 0.webp；About 使用肖像与文字组合。上述源图通过 layout.html 中的仓库相对路径引用。
+
+2026-11-17：AI 产品组改为 2×2，新增 Spec to Tested Code，配图引用 src/assets/article-spec-to-tested-code/0.webp。该组画布为 800×464，导出 1600×928；其余组尺寸不变。

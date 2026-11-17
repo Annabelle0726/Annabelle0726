@@ -49,10 +49,10 @@ Interface studies exploring how choosing, browsing and feedback shape everyday i
 
 ## 03 / AI products
 
-Tools and skills that bring AI into job searching, interface design and README communication.
+Tools and skills that bring AI into job searching, interface design, README communication, and development verification.
 
 <p align="center">
-  <a href="https://annabelle0726.github.io/Annabelle0726/#ai-products"><img src="assets/readme/showcase-ai.webp" width="800" alt="AI products page: Waymark concept board, Taste Studio design directions and README Atelier concept examples"></a>
+  <a href="https://annabelle0726.github.io/Annabelle0726/#ai-products"><img src="assets/readme/showcase-ai.webp" width="800" alt="AI products page: Waymark concept board, Taste Studio design directions, README Atelier concept examples, and Spec to Tested Code"></a>
 </p>
 
 | Project | Purpose | What is shown |
@@ -60,6 +60,7 @@ Tools and skills that bring AI into job searching, interface design and README c
 | [Waymark](https://annabelle0726.github.io/Annabelle0726/#waymark-notes) | Jobs, applications and interview preparation; AI reads approved excerpts, and message-driven updates require confirmation | Locally running product; the page includes a concept demo with sample roles |
 | [Taste Studio](https://annabelle0726.github.io/Annabelle0726/#taste-studio-notes) | Compare design directions, then refine an interface through preferences and feedback | UI design Skill with a published demo site |
 | [README Atelier](https://annabelle0726.github.io/Annabelle0726/#ai-products) | Shape a repository story, cover, illustrations and reading order | README design Skill; a separate project link is pending |
+| [Spec to Tested Code](https://annabelle0726.github.io/Annabelle0726/#spec-to-tested-code-notes) | Connect requirements, behavior scenarios and test-driven implementation, with reviewable evidence for completion claims | AI development & verification Skill · SDD / BDD / TDD; [repository](https://github.com/Annabelle0726/spec-to-tested-code) |
 
 
 ## 04 / Data & AI
