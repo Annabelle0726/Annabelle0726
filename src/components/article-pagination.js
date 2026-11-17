@@ -12,6 +12,7 @@ const articles = [
   ['respecting-lives', '尊重每一种生活，也看见每一个人'],
   ['page-soul', '页面有了灵魂，是一种什么感觉？'],
   ['readme-atelier-notes', '好项目，值得一份好读的 README'],
+  ['spec-to-tested-code-notes', 'AI 说「做完了」，我想再问一句'],
 ];
 
 export function articlePageLinks(routeId, en = false) {

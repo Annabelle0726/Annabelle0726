@@ -13,6 +13,7 @@ const views = {
   'respecting-lives': ['respecting-lives', 'wechat'],
   'page-soul': ['page-soul', 'wechat'],
   'readme-atelier-notes': ['readme-atelier-notes', 'wechat'],
+  'spec-to-tested-code-notes': ['spec-to-tested-code-notes', 'wechat'],
   hero: ['home', 'home'],
   about: ['about', 'home'],
   skills: ['about', 'home'],

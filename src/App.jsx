@@ -31,6 +31,7 @@ import TasteStudioArticle from './sections/TasteStudioArticle';
 import RespectingLivesArticle from './sections/RespectingLivesArticle';
 import PageSoulArticle from './sections/PageSoulArticle';
 import ReadmeAtelierArticle from './sections/ReadmeAtelierArticle';
+import SpecToTestedCodeArticle from './sections/SpecToTestedCodeArticle';
 
 export default function App() {
   const [isMobile, setIsMobile] = useState(() => window.matchMedia('(max-width: 767px)').matches);
@@ -96,6 +97,7 @@ export default function App() {
     'respecting-lives': <RespectingLivesArticle language={language} onNavigate={navigate} />,
     'page-soul': <PageSoulArticle language={language} onNavigate={navigate} />,
     'readme-atelier-notes': <ReadmeAtelierArticle language={language} onNavigate={navigate} />,
+    'spec-to-tested-code-notes': <SpecToTestedCodeArticle language={language} onNavigate={navigate} />,
     home: <Hero language={language} onNavigate={navigate} />,
     about: <About language={language} onNavigate={navigate} />,
     portfolio: <WebProjects language={language} onNavigate={navigate} />,
