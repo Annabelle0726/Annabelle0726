@@ -1,26 +1,12 @@
-const articles = [
-  ['agency-bloom', 'Agency Bloom：想抵达的生活'],
-  ['agency-bloom-value', '在变化中寻找自己的价值'],
-  ['agency-bloom-applause', '暂时没有掌声也想继续做下去'],
-  ['agency-bloom-ideas', '给想法一次认真的尝试'],
-  ['design-care', '好看，想让你多看一眼；用心，想让你心动'],
-  ['being-seen', '想被看见，也想看见你'],
-  ['personal-brand', 'AI 时代的个人品牌：你靠什么被记住？'],
-  ['understanding-needs', '从短剧爆火，看懂人们真正需要什么'],
-  ['waymark-notes', '求职已经够累了，别再让信息散落各处'],
-  ['taste-studio-notes', '审美会变，但我们始终向往美'],
-  ['respecting-lives', '尊重每一种生活，也看见每一个人'],
-  ['page-soul', '页面有了灵魂，是一种什么感觉？'],
-  ['readme-atelier-notes', '好项目，值得一份好读的 README'],
-  ['spec-to-tested-code-notes', 'AI 说「做完了」，我想再问一句'],
-];
+import { wechatCollections } from './wechat-catalog.js';
 
 export function articlePageLinks(routeId, en = false) {
-  const index = articles.findIndex(([id]) => id === routeId);
+  const entries = wechatCollections.flatMap(collection => [[collection.id, en ? collection.en : collection.title], ...collection.articles.filter(([id]) => id)]);
+  const index = entries.findIndex(([id]) => id === routeId);
   if (index < 0) return null;
   const entry = ([id, label]) => ({ href: '#' + id, label });
   return {
-    previous: entry(index ? articles[index - 1] : ['services', en ? 'Data & AI' : '数据与 AI']),
-    next: entry(index < articles.length - 1 ? articles[index + 1] : ['models', en ? 'Favorites' : '灵感收藏']),
+    previous: entry(index ? entries[index - 1] : ['services', en ? 'Data & AI' : '数据与 AI']),
+    next: entry(index < entries.length - 1 ? entries[index + 1] : ['models', en ? 'Favorites' : '灵感收藏']),
   };
 }

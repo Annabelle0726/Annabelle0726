@@ -86,7 +86,7 @@ export default function ModelsTools({ language = 'zh', onNavigate, id = 'models'
           </li>)}
         </ol>
       </section>
-      <WebProjectNav en={language === 'en'} onNavigate={onNavigate} previous={{ href: '#agency-bloom', label: language === 'en' ? 'WeChat articles' : '微信公众号' }} next={{ href: '#quotes', label: t.next }} />
+      <WebProjectNav en={language === 'en'} onNavigate={onNavigate} previous={{ href: '#wechat-things-i-love', label: language === 'en' ? 'WeChat articles' : '微信公众号' }} next={{ href: '#quotes', label: t.next }} />
     </div>
   </section>;
 }

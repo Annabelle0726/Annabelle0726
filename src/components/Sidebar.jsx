@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import Icon from './SidebarIcon';
+import { wechatCollections, collectionForArticle } from './wechat-catalog';
 import SidebarPortrait from './SidebarPortrait';
 import useNavigationIndicator from '../hooks/useNavigationIndicator';
 import brandMark from '../assets/brand-mark.svg';
@@ -77,6 +78,9 @@ export default function Sidebar({ isMobile, isOpen, activeSection, activeGroup, 
   useEffect(() => { if (activeSection === 'XD' || activeSection.startsWith('XD-')) setDesignExpanded(true); }, [activeSection]);
   const [dataExpanded, setDataExpanded] = useState(activeSection === 'services' || activeSection.startsWith('data-'));
   useEffect(() => { if (activeSection === 'services' || activeSection.startsWith('data-')) setDataExpanded(true); }, [activeSection]);
+  const activeCollection = wechatCollections.find(item => item.id === activeSection) || collectionForArticle(activeSection);
+  const [collectionExpanded, setCollectionExpanded] = useState({});
+  useEffect(() => { if (activeCollection) setCollectionExpanded(previous => ({ ...previous, [activeCollection.id]: true })); }, [activeCollection]);
   const [account, setAccount] = useState(null);
   const accountTrigger = useRef(null);
   const openAccount = (key, event) => {
@@ -137,18 +141,14 @@ export default function Sidebar({ isMobile, isOpen, activeSection, activeGroup, 
         <ul className="sidebar-menu">
         {group('home', 'hero', <>{child('hero', t.overview)}{child('about', t.about)}</>)}
         {group('projects', 'portfolio', <><li className="sidebar-design-branch"><div className="sidebar-design-row"><a href="#portfolio" onClick={onClose} aria-current={activeSection === 'portfolio' ? 'page' : undefined} className={activeSection.startsWith('web-') ? 'is-ancestor' : undefined}>{t.web}</a><button type="button" aria-label={(webExpanded ? t.collapse : t.expand) + ' ' + t.web} aria-expanded={webExpanded} aria-controls="sidebar-web-projects" onClick={() => setWebExpanded(value => !value)}><Icon name="chevron"/></button></div><ul id="sidebar-web-projects" className="sidebar-grandchildren" hidden={!webExpanded}>{child('web-agency-bloom', 'Agency Bloom')}{child('web-belay', 'Belay')}{child('web-somnia', 'Somnia Library')}</ul></li><li className="sidebar-design-branch"><div className="sidebar-design-row"><a href="#XD" onClick={onClose} aria-current={activeSection === 'XD' ? 'page' : undefined} className={activeSection.startsWith('XD-') ? 'is-ancestor' : undefined}>{t.design}</a><button type="button" aria-label={`${designExpanded ? t.collapse : t.expand} ${t.design}`} aria-expanded={designExpanded} aria-controls="sidebar-design-projects" onClick={() => setDesignExpanded(value => !value)}><Icon name="chevron"/></button></div><ul id="sidebar-design-projects" className="sidebar-grandchildren" hidden={!designExpanded}>{child('XD-cupcakes', 'Cupcakes')}{child('XD-reverie', 'Reverie Reads')}{child('XD-travel', language === 'zh' ? '旅行探索' : 'Travel Discovery')}</ul></li>{child('ai-products', language === 'zh' ? 'AI 产品' : 'AI products')}<li className="sidebar-design-branch"><div className="sidebar-design-row"><a href="#services" onClick={onClose} aria-current={activeSection === 'services' ? 'page' : undefined} className={activeSection.startsWith('data-') ? 'is-ancestor' : undefined}>{t.data}</a><button type="button" aria-label={(dataExpanded ? t.collapse : t.expand) + ' ' + t.data} aria-expanded={dataExpanded} aria-controls="sidebar-data-projects" onClick={() => setDataExpanded(value => !value)}><Icon name="chevron"/></button></div><ul id="sidebar-data-projects" className="sidebar-grandchildren" hidden={!dataExpanded}>{child('data-athub', language === 'zh' ? 'AtHub 异常检测' : 'AtHub anomalies')}{child('data-visualization', language === 'zh' ? '公共数据可视化' : 'Public data visuals')}{child('data-energy', language === 'zh' ? '数据中心选址' : 'Data-center siting')}</ul></li></>)}
-        {group('wechat', 'agency-bloom', <>
-              {['https://mp.weixin.qq.com/s/xbY_lSzfr1YvotELeE3LsA', 'https://mp.weixin.qq.com/s/byApMNE4pbO2M4OX62F4Cg', 'https://mp.weixin.qq.com/s/pThuorA_l3hqmpPardULOg', 'https://mp.weixin.qq.com/s/VSMctNqPAuP6FyYJsgE6_A'].map((url, index) => <li key={url}><a href={index === 0 ? '#agency-bloom' : index === 1 ? '#agency-bloom-value' : index === 2 ? '#agency-bloom-applause' : '#agency-bloom-ideas'} aria-current={((index === 0 && activeSection === 'agency-bloom') || (index === 1 && activeSection === 'agency-bloom-value') || (index === 2 && activeSection === 'agency-bloom-applause') || (index === 3 && activeSection === 'agency-bloom-ideas')) ? 'page' : undefined} onClick={onClose}><span>{index === 0 ? (language === 'zh' ? 'Agency Bloom：想抵达的生活' : 'Agency Bloom: A life of our own') : index === 1 ? (language === 'zh' ? '在变化中寻找自己的价值' : 'Finding our value') : index === 2 ? (language === 'zh' ? '暂时没有掌声也想继续做下去' : 'Continuing without applause') : (language === 'zh' ? '给想法一次认真的尝试' : 'Giving ideas a real try')}</span></a></li>)}
-              {child('design-care', '好看，想让你多看一眼；用心，想让你心动')}
-              {child('being-seen', '想被看见，也想看见你')}
-              {child('personal-brand', 'AI 时代的个人品牌：你靠什么被记住？')}
-              {child('understanding-needs', '从短剧爆火，看懂人们真正需要什么')}
-              {child('waymark-notes', '求职已经够累了，别再让信息散落各处')}
-              {child('taste-studio-notes', '审美会变，但我们始终向往美')}
-              {child('respecting-lives', '尊重每一种生活，也看见每一个人')}
-              {child('page-soul', '页面有了灵魂，是一种什么感觉？')}
-              {child('readme-atelier-notes', '好项目，值得一份好读的 README')}
-              {child('spec-to-tested-code-notes', 'AI 说「做完了」，我想再问一句')}
+        {group('wechat', 'wechat-product-life', <>
+          {wechatCollections.map(collection => <li key={collection.id} className="sidebar-design-branch">
+            <div className="sidebar-design-row">
+              <a href={'#' + collection.id} onClick={onClose} aria-current={activeSection === collection.id ? 'page' : undefined} className={activeCollection?.id === collection.id ? 'is-ancestor' : undefined}>{language === 'zh' ? collection.title : collection.en}</a>
+              <button type="button" aria-label={(collectionExpanded[collection.id] ? t.collapse : t.expand) + ' ' + collection.title} aria-expanded={!!collectionExpanded[collection.id]} aria-controls={'sidebar-' + collection.id} onClick={() => setCollectionExpanded(previous => ({ ...previous, [collection.id]: !previous[collection.id] }))}><Icon name="chevron"/></button>
+            </div>
+            <ul id={'sidebar-' + collection.id} className="sidebar-grandchildren" hidden={!collectionExpanded[collection.id]}>{collection.articles.filter(([id]) => id).map(([id, title]) => <React.Fragment key={id}>{child(id, title)}</React.Fragment>)}</ul>
+          </li>)}
         </>)}
         {group('favorites', 'models', <>{child('models', t.models)}{child('quotes', t.quotes)}</>)}
         <li data-group="contact" className={`sidebar-group${activeGroup === 'contact' ? ' is-active' : ''}`}><div className="sidebar-nav-row"><a className="sidebar-parent" href="#contact" onClick={onClose} aria-current={activeSection === 'contact' ? 'page' : undefined}><span className="sidebar-icon-tray"><Icon name="contact"/></span><span>{t.contact}</span></a></div></li>

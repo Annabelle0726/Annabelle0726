@@ -1,5 +1,12 @@
 // Keep the published anchor URLs, but mount only their content view.
 const views = {
+  'meaning-of-expression': ['meaning-of-expression', 'wechat'],
+  'ai-love-letters': ['ai-love-letters', 'wechat'],
+  'wechat-product-life': ['wechat-product-life', 'wechat'],
+  'wechat-seeing-each-other': ['wechat-seeing-each-other', 'wechat'],
+  'wechat-things-i-love': ['wechat-things-i-love', 'wechat'],
+  'beyond-the-selloff': ['beyond-the-selloff', 'wechat'],
+  'experience-compounds': ['experience-compounds', 'wechat'],
   'agency-bloom': ['agency-bloom', 'wechat'],
   'agency-bloom-value': ['agency-bloom-value', 'wechat'],
   'agency-bloom-applause': ['agency-bloom-applause', 'wechat'],
