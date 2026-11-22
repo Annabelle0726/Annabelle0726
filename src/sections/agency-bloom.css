@@ -1,37 +1,40 @@
 /* The section heading shares About's standard; the article follows beneath it. */
 .agency-article { padding: 28px clamp(24px, 2vw, 32px) 48px; color: var(--color-text); font-family: Georgia, 'Songti SC', 'STSong', SimSun, serif; }
 .article-page { width: 100%; min-width: 0; }
-.article-page > .section-header { margin-bottom: 38px; }
-.article-header, .article-body { width: 100%; min-width: 0; }
+.article-page > .section-header { width: min(100%, 760px); margin: 0 auto 30px; }
+.article-header, .article-body { width: min(100%, 760px); min-width: 0; margin-inline: auto; }
 .article-header { margin-bottom: 24px; }
 .article-header h2 { margin: 0 0 18px; color: var(--color-text); font: 500 clamp(22px, 2.2vw, 29px)/1.45 Georgia, 'Songti SC', 'STSong', SimSun, serif; letter-spacing: .015em; }
-.article-cover-frame, .article-figure { box-sizing: border-box; padding: clamp(4px, 0.8vw, 6px); border: 1px solid color-mix(in srgb, var(--color-champagne-gold) 70%, transparent); background: var(--color-paper); }
-.article-cover { display: block; width: 100%; height: auto; }
 .article-cover-caption { margin: 9px 0 0; text-align: center; color: var(--color-text-secondary); font-size: 12px; letter-spacing: .04em; }
-.article-body { font-size: 15px; line-height: 1.8; letter-spacing: .015em; overflow-wrap: break-word; }
+.article-body { display: flow-root; font-size: 16px; line-height: 1.9; letter-spacing: .015em; overflow-wrap: break-word; }
 .article-intro-label { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; color: var(--color-imperial-gold); font-size: 14px; }
 .article-intro-label::after { content: ''; height: 1px; flex: 1; background: var(--color-champagne-gold); opacity: .7; }
 .article-body p { margin: 0 0 1em; }
-.article-body h3 { display: flex; align-items: baseline; gap: 18px; margin: 2.1em 0 .7em; padding-top: 18px; border-top: 1px solid color-mix(in srgb, var(--color-champagne-gold) 70%, transparent); color: var(--color-ink-navy); font: 500 20px/1.5 Georgia, 'Songti SC', 'STSong', SimSun, serif; }
+.article-body h3 { clear: both; display: flex; align-items: baseline; gap: 18px; margin: 2.1em 0 .7em; padding-top: 18px; border-top: 1px solid color-mix(in srgb, var(--color-champagne-gold) 70%, transparent); color: var(--color-ink-navy); font: 500 20px/1.5 Georgia, 'Songti SC', 'STSong', SimSun, serif; }
 .article-body h3 span { color: var(--color-imperial-gold); font: italic 400 24px/1 Georgia, serif; }
-.article-figure { width: 100%; margin: 1.4em auto; }
-.article-figure-portrait { width: min(100%, 420px); }
-.article-figure img { display: block; width: 100%; height: auto; }
-.article-body blockquote { margin: 1.8em 0; padding: .7em 1.2em; border-left: 2px solid var(--color-champagne-gold); background: color-mix(in srgb, var(--color-aqua-light) 45%, transparent); color: var(--color-ink-navy); font-size: 1em; line-height: 1.8; }
+.article-body blockquote { clear: both; margin: 1.8em 0; padding: .7em 1.2em; border-left: 2px solid var(--color-champagne-gold); background: color-mix(in srgb, var(--color-aqua-light) 45%, transparent); color: var(--color-ink-navy); font-size: 1em; line-height: 1.8; }
 .article-body blockquote small { display: inline-block; margin-top: .4em; font-size: .9em; }
+.article-body > .web-project-nav, .article-collection-return { clear: both; }
+.article-topic { color: var(--color-text-secondary); font: 400 12px/1.6 system-ui, sans-serif; letter-spacing: .08em; }
 @media (max-width: 767px) {
   .agency-article { padding: 32px max(24px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(24px, env(safe-area-inset-left, 0px)); }
   .article-body > .web-project-nav { margin-top: 16px; padding-top: 12px; }
   .article-page > .section-header { margin-bottom: 30px; }
   .article-header h2 { font-size: 21px; margin-bottom: 14px; }
   .article-header { margin-bottom: 20px; }
-  .article-body { font-size: 15px; line-height: 1.8; }
+  .article-body { font-size: 16px; line-height: 1.9; }
   .article-body h3 { font-size: 19px; gap: 12px; margin-top: 2em; }
   .article-body h3 span { font-size: 22px; }
-  .article-figure { margin: 1.3em auto; }
 }
 
 /* Article titles can wrap alongside the shared signature at narrow widths. */
 .article-page > .section-header .section-title-line { align-items: center; }
-.article-page > .section-header .section-header-title { min-width: 0; max-width: 760px; font-size: clamp(25px, 2.6vw, 34px); line-height: 1.4; }
-@media (max-width: 767px) { .article-page > .section-header .section-title-line { gap: 12px; } .article-page > .section-header .section-header-title { font-size: 23px; } .article-page > .section-header .section-signature { width: 54px; height: 30px; } }
+#main .agency-article .article-page > .section-header .section-header-title { min-width: 0; max-width: 760px; font-size: clamp(25px, 2.6vw, 34px); line-height: 1.4; }
+@media (max-width: 767px) {
+  .article-page > .section-header .section-title-line { gap: 12px; }
+  #main .agency-article .article-page > .section-header .section-header-title { font-size: 26px; }
+  .article-page > .section-header .section-signature { width: 54px; height: 30px; }
+  .article-page > .section-header .section-eyebrow { display: block; }
+  .article-page > .section-header .section-eyebrow span { margin-inline: 8px; }
+  .article-page > .section-header .section-eyebrow::after { display: none; }
+}

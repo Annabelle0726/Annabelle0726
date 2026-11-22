@@ -1,4 +1,5 @@
 import React from 'react';
+import Figure from '../components/ArticleFigure';
 import './agency-bloom.css';
 import SectionHeader from '../components/SectionHeader';
 import ArticleFooter from '../components/ArticleFooter';
@@ -10,7 +11,6 @@ import image4 from '../assets/agency-bloom/4.webp';
 import image5 from '../assets/agency-bloom/5.webp';
 import image6 from '../assets/agency-bloom/6.webp';
 
-const Figure = ({ src, alt, portrait = false }) => <figure className={`article-figure${portrait ? ' article-figure-portrait' : ''}`}><img src={src} alt={alt} loading="lazy" /></figure>;
 const Heading = ({ number, children }) => <h3><span>{number}</span>{children}</h3>;
 
 export default function AgencyBloom({ language = 'zh', onNavigate }) {
@@ -19,7 +19,7 @@ export default function AgencyBloom({ language = 'zh', onNavigate }) {
     <SectionHeader eyebrow="AGENCY BLOOM" title="我们不断向前，究竟想抵达怎样的生活？" as="h1" />
     <header className="article-header">
 
-      <div className="article-cover-frame"><img className="article-cover" src={image0} alt="Agency Bloom 产品封面，远山与日出" /></div>
+      <Figure src={image0} width={1080} height={608} kind="cover" alt="Agency Bloom 产品封面，远山与日出" />
       <p className="article-cover-caption">Your Life. Your Direction. Your Agency.</p>
     </header>
     <div className="article-body">
@@ -30,18 +30,18 @@ export default function AgencyBloom({ language = 'zh', onNavigate }) {
       <p>于是，我开始思考：我们究竟是在努力靠近自己想要的生活，还是只是在努力成为一个符合期待的、更优秀的人？</p>
       <p>这个问题，后来成为我设计 Agency Bloom 的起点。</p>
       <Heading number="01">从一次对话开始，重新理解自己的困惑</Heading>
-      <Figure src={image1} alt="阳光洒落的植物与窗景" />
+      <Figure src={image1} alt="阳光洒落的植物与窗景" width={1080} height={810} kind="illustration" align="aside" />
       <p>Agency Bloom 是我正在开发的一款微信小程序，目前仍处于 Alpha 阶段。它最初面向正在求职、考虑职业转向，或者对未来方向感到迷茫的人。</p>
-      <Figure portrait src={image2} alt="Agency Bloom 对话界面展示" />
+      <Figure src={image2} alt="Agency Bloom 对话界面展示" width={1080} height={1350} kind="portrait" />
       <p>我发现，当一个人说自己不知道下一步该怎么办时，真正困扰他的可能并不只是缺少信息。有时候，我们已经听过很多建议，也知道应该努力学习、提升能力、做好规划，却仍然不知道哪一种选择更适合自己。因为每条道路都有吸引人的地方，也都有需要承担的代价，而我们的愿望、能力和现实条件又常常交织在一起。</p>
       <p>希望 Agency Bloom 能提供一个不必急着得出答案的空间。用户可以从当下真实的困惑开始，通过交流逐渐整理自己的经历、关注的事情和现实约束，再去理解不同选择背后的可能性。</p>
-      <Figure portrait src={image3} alt="Agency Bloom 产品界面展示" />
+      <Figure src={image3} alt="Agency Bloom 产品界面展示" width={1080} height={1350} kind="portrait" />
       <p>它不需要你一开始就拥有明确的人生目标，也不要求你把自己的经历包装成一个充满积极意义的故事。你可以承认自己不知道想要什么，可以表达对某个决定的犹豫，也可以只是想把最近发生的事情认真梳理一遍。</p>
       <Heading number="02">比起得到更多建议，我更希望我们有机会亲自尝试</Heading>
       <p>我曾经以为，只要认真分析每一种选择的利弊，就能找到最适合自己的方向。但后来渐渐意识到，有些问题并不能完全依靠思考得到答案。我们可能认为某份工作很理想，真正接触后才发现自己并不喜欢那样的日常；也可能曾经忽略某种普通的生活方式，却在偶然的经历中感受到久违的满足。</p>
       <p>所以，比起让 AI 告诉用户应该选择什么，我更希望它能够帮助用户发现一些值得探索的方向，并思考如何通过负担得起的小尝试，获得真实的体验。</p>
       <p>例如，一个对职业转型感兴趣的人，不一定要马上辞职或投入几个月重新学习。他可以先了解某个岗位的实际工作，尝试完成一个小项目，或者与从业者交流，再根据这些经历重新判断自己的兴趣和能力。</p>
-      <Figure portrait src={image4} alt="Agency Bloom 决策卡示意图" />
+      <Figure src={image4} alt="Agency Bloom 决策卡示意图" width={1080} height={1350} kind="portrait" />
       <p>Agency Bloom 希望通过「决策卡」整理这样的探索过程，帮助用户记录可能的方向、现实约束、风险和下一步尝试。AI 可以提供建议，但哪些内容值得保留、是否准备付诸行动，都应该由用户自己确认。</p>
       <blockquote>好的工具不应该替我们决定人生，而应该帮助我们拥有作出决定所需要的理解和空间。</blockquote>
       <Heading number="03">人生不是一场永远需要完成的 KPI</Heading>
@@ -50,7 +50,7 @@ export default function AgencyBloom({ language = 'zh', onNavigate }) {
       <p>努力当然有意义。稳定的收入、专业能力和实际成果，能够让我们获得更多选择，也能够帮助我们照顾自己和重要的人。我并不认为追求这些事情有什么不对。只是，如果生活里的每一件事都必须证明自己的价值，我们可能会慢慢忘记，努力原本是为了让生活变得更好，而不是让生活永远接受努力的考核。</p>
       <p>一个人可能会改变目标，也可能在某段时间里感到疲惫。曾经向往的生活，随着经历增加而不再适合自己，并不意味着过去的努力都是错误的。我们应该有重新考虑的机会，也应该允许自己在没有明确成果的时候，依然能够享受生活。</p>
       <p>所以，我希望 Agency Bloom 能够尊重每个人不同的节奏。它可以帮助用户回顾过去的选择，记录新的感受，但不应该因为用户暂时没有行动，就把停留理解成失败。</p>
-      <Figure portrait src={image5} alt="Agency Bloom 尊重用户节奏的界面展示" />
+      <Figure src={image5} alt="Agency Bloom 尊重用户节奏的界面展示" width={1080} height={1350} kind="portrait" />
       <blockquote>成长可以是一种选择，而不是一种永远无法完成的义务。</blockquote>
       <Heading number="04">你的生活，应该由你自己作主</Heading>
       <p>Agency Bloom 这个名字里的 Agency，指向的是一个我很珍惜的概念：人在现实条件之中，仍然能够理解自己的处境、表达意愿，并尝试作出选择的能力。</p>
@@ -68,7 +68,7 @@ export default function AgencyBloom({ language = 'zh', onNavigate }) {
       <p>我们不必等到足够优秀、足够成功，或者终于拥有了确定的未来，才允许自己好好生活。</p>
       <p>或许，理想的生活并不只存在于某个遥远的终点，它也存在于今天那些微小而真实的选择里。</p>
       <blockquote>Agency Bloom，愿每个人都能按照自己的节奏，慢慢生长<br /><small>🌱 更小的一步，也能通向更明亮的明天</small></blockquote>
-      <Figure src={image6} alt="温暖的日出与自然风景" />
+      <Figure src={image6} alt="温暖的日出与自然风景" width={1080} height={810} kind="illustration" align="aside" />
       <p>如果你也曾经在职业选择或人生方向面前感到迷茫，欢迎在评论区分享自己的经历。我尤其想知道：有没有哪一个时刻，让你突然意识到，自己真正想要的生活，和过去想象的并不一样？</p>
       <ArticleFooter routeId="agency-bloom" language={language} onNavigate={onNavigate} />
     </div>
