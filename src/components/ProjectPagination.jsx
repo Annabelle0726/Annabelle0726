@@ -16,7 +16,7 @@ export function projectPageLinks(routeId, en = false) {
   const group = groups[groupIndex];
   if (routeId === group.id) return {
     previous: groupIndex ? entry(groups[groupIndex - 1].id, groups[groupIndex - 1].label) : entry('about', ['关于我', 'About me']),
-    next: groupIndex < groups.length - 1 ? entry(groups[groupIndex + 1].id, groups[groupIndex + 1].label) : entry('wechat-product-life', ['产品背后的生活', 'Life behind products']),
+    next: groupIndex < groups.length - 1 ? entry(groups[groupIndex + 1].id, groups[groupIndex + 1].label) : entry('wechat-things-i-love', ['做点喜欢的事', 'Things I love doing']),
   };
   const index = group.items.findIndex(([id]) => id === routeId);
   const overview = entry(group.id, en ? 'Back to ' + pick(group.label) : '返回' + pick(group.label));

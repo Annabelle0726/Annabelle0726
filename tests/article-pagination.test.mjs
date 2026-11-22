@@ -4,7 +4,7 @@ import { articlePageLinks } from '../src/components/article-pagination.js';
 import { resolveNavigation } from '../src/navigation.js';
 
 test('article pagination follows sidebar order in both directions', () => {
-  const ids = ['wechat-product-life', 'agency-bloom-value', 'understanding-needs', 'waymark-notes', 'meaning-of-expression', 'taste-studio-notes', 'page-soul', 'readme-atelier-notes', 'spec-to-tested-code-notes', 'beyond-the-selloff', 'experience-compounds', 'wechat-seeing-each-other', 'respecting-lives', 'ai-love-letters', 'wechat-things-i-love', 'design-care', 'agency-bloom-ideas', 'agency-bloom-applause', 'agency-bloom', 'personal-brand', 'being-seen'];
+  const ids = ['wechat-things-i-love', 'agency-bloom', 'agency-bloom-applause', 'agency-bloom-ideas', 'design-care', 'personal-brand', 'being-seen', 'wechat-product-life', 'agency-bloom-value', 'understanding-needs', 'waymark-notes', 'meaning-of-expression', 'taste-studio-notes', 'page-soul', 'readme-atelier-notes', 'spec-to-tested-code-notes', 'beyond-the-selloff', 'experience-compounds', 'wechat-seeing-each-other', 'respecting-lives', 'ai-love-letters'];
   for (let i = 0; i < ids.length; i++) {
     const links = articlePageLinks(ids[i]);
     assert.equal(links.previous.href, '#' + (ids[i - 1] || 'services'));
@@ -23,9 +23,9 @@ test('Spec to Tested Code article connects to the next article in its collection
 
 test('unknown articles have no pagination', () => assert.equal(articlePageLinks('missing'), null));
 
-test('collections contain 10, 2 and 6 distinct articles with valid routes', async () => {
+test('collections contain 6, 10 and 2 distinct articles with valid routes', async () => {
   const { wechatCollections, collectionForArticle } = await import('../src/components/wechat-catalog.js');
-  assert.deepEqual(wechatCollections.map(c => c.articles.length), [10, 2, 6]);
+  assert.deepEqual(wechatCollections.map(c => c.articles.length), [6, 10, 2]);
   const ids = wechatCollections.flatMap(c => c.articles.map(([id]) => id));
   assert.equal(new Set(ids).size, 18);
   for (const c of wechatCollections) for (const [id] of c.articles) {
