@@ -1,6 +1,7 @@
 import WebProjectNav from '../components/WebProjectNav';
 import React from 'react';
 import SectionHeader from '../components/SectionHeader';
+import { wechatCollections } from '../components/wechat-catalog';
 import openai from '../assets/tool-icons/openai.svg';
 import claude from '../assets/tool-icons/claude.svg';
 import './models-tools.css';
@@ -86,7 +87,7 @@ export default function ModelsTools({ language = 'zh', onNavigate, id = 'models'
           </li>)}
         </ol>
       </section>
-      <WebProjectNav en={language === 'en'} onNavigate={onNavigate} previous={{ href: '#wechat-seeing-each-other', label: language === 'en' ? 'WeChat articles' : '微信公众号' }} next={{ href: '#quotes', label: t.next }} />
+      <WebProjectNav en={language === 'en'} onNavigate={onNavigate} previous={{ href: '#' + wechatCollections.at(-1).id, label: language === 'en' ? 'WeChat articles' : '微信公众号' }} next={{ href: '#quotes', label: t.next }} />
     </div>
   </section>;
 }

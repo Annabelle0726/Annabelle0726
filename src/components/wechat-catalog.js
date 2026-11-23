@@ -17,14 +17,15 @@ export const wechatCollections = [
     ['page-soul', '页面有了灵魂，是一种什么感觉？'],
     ['readme-atelier-notes', '好项目，值得一份好读的 README'],
     ['spec-to-tested-code-notes', 'AI 说「做完了」，我想再问一句'],
-    ['beyond-the-selloff', '满屏都是绿，然后呢？'],
-    ['experience-compounds', '工作不是打怪升级，为什么有人越做越厉害？'],
   ] },
   { id: 'wechat-seeing-each-other', title: '看见彼此', en: 'Seeing each other', description: '在这里，记录人与人之间的理解与距离，关注彼此的不同，也看见每个人独有的光。', articles: [
     ['respecting-lives', '尊重每一种生活，也看见每一个人'],
     ['ai-love-letters', 'AI 会写情话，那谁负责心动？'],
   ] },
-
+  { id: 'wechat-making-sense-of-the-numbers', title: '把账算明白', en: 'Making sense of the numbers', description: '写钱是怎么赚的、怎么分的，也写人的本事是怎么练出来的。从股市里的预期、AI 省下的时间，到工作中的选择，我想算清两笔账：市场在为什么付钱，我们又愿意把自己的时间花在哪里。', articles: [
+    ['beyond-the-selloff', '满屏都是绿，然后呢？'],
+    ['experience-compounds', '工作不是打怪升级，为什么有人越做越厉害？'],
+  ] },
 ];
 
 export const collectionForArticle = id => wechatCollections.find(collection => collection.articles.some(([route]) => route === id));

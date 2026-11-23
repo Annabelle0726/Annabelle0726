@@ -1,10 +1,10 @@
+import { wechatCollections } from './components/wechat-catalog.js';
+
 // Keep the published anchor URLs, but mount only their content view.
 const views = {
+  ...Object.fromEntries(wechatCollections.map(({ id }) => [id, [id, 'wechat']])),
   'meaning-of-expression': ['meaning-of-expression', 'wechat'],
   'ai-love-letters': ['ai-love-letters', 'wechat'],
-  'wechat-product-life': ['wechat-product-life', 'wechat'],
-  'wechat-seeing-each-other': ['wechat-seeing-each-other', 'wechat'],
-  'wechat-things-i-love': ['wechat-things-i-love', 'wechat'],
   'beyond-the-selloff': ['beyond-the-selloff', 'wechat'],
   'experience-compounds': ['experience-compounds', 'wechat'],
   'agency-bloom': ['agency-bloom', 'wechat'],

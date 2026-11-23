@@ -31,6 +31,7 @@ import TasteStudioArticle from './sections/TasteStudioArticle';
 import RespectingLivesArticle from './sections/RespectingLivesArticle';
 import PageSoulArticle from './sections/PageSoulArticle';
 import WechatCollection from './sections/WechatCollection';
+import { wechatCollections } from './components/wechat-catalog';
 import NewLifeArticle from './sections/NewLifeArticle';
 import ReadmeAtelierArticle from './sections/ReadmeAtelierArticle';
 import SpecToTestedCodeArticle from './sections/SpecToTestedCodeArticle';
@@ -86,7 +87,7 @@ export default function App() {
     'model-skills': language === 'zh' ? '模型 Skills' : 'Model skills',
   }[route.id];
   const views = {
-    ...Object.fromEntries(['wechat-product-life', 'wechat-seeing-each-other', 'wechat-things-i-love'].map(id => [id, <WechatCollection key={id} id={id} language={language} onNavigate={navigate} />])),
+    ...Object.fromEntries(wechatCollections.map(({ id }) => [id, <WechatCollection key={id} id={id} language={language} onNavigate={navigate} />])),
     ...Object.fromEntries(['beyond-the-selloff', 'experience-compounds', 'meaning-of-expression', 'ai-love-letters'].map(id => [id, <NewLifeArticle key={id} id={id} language={language} onNavigate={navigate} />])),
     'agency-bloom': <AgencyBloom language={language} onNavigate={navigate} />,
     'agency-bloom-value': <AgencyBloomSecond language={language} onNavigate={navigate} />,
