@@ -25,6 +25,7 @@ export const wechatCollections = [
   { id: 'wechat-making-sense-of-the-numbers', title: '把账算明白', en: 'Making sense of the numbers', description: '写钱是怎么赚的、怎么分的，也写人的本事是怎么练出来的。从股市里的预期、AI 省下的时间，到工作中的选择，我想算清两笔账：市场在为什么付钱，我们又愿意把自己的时间花在哪里。', articles: [
     ['beyond-the-selloff', '满屏都是绿，然后呢？'],
     ['experience-compounds', '工作不是打怪升级，为什么有人越做越厉害？'],
+    ['ai-efficiency-gains', 'AI 把活干快了，谁把钱赚了？'],
   ] },
 ];
 

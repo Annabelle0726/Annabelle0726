@@ -8,7 +8,7 @@ test('article pagination follows sidebar order in both directions', () => {
     'wechat-things-i-love', 'agency-bloom', 'agency-bloom-applause', 'agency-bloom-ideas', 'design-care', 'personal-brand', 'being-seen',
     'wechat-product-life', 'agency-bloom-value', 'understanding-needs', 'waymark-notes', 'meaning-of-expression', 'taste-studio-notes', 'page-soul', 'readme-atelier-notes', 'spec-to-tested-code-notes',
     'wechat-seeing-each-other', 'respecting-lives', 'ai-love-letters',
-    'wechat-making-sense-of-the-numbers', 'beyond-the-selloff', 'experience-compounds',
+    'wechat-making-sense-of-the-numbers', 'beyond-the-selloff', 'experience-compounds', 'ai-efficiency-gains',
   ];
   for (let i = 0; i < ids.length; i++) {
     const links = articlePageLinks(ids[i]);
@@ -28,11 +28,11 @@ test('the last article in Life behind products leads to Seeing each other', () =
 
 test('unknown articles have no pagination', () => assert.equal(articlePageLinks('missing'), null));
 
-test('collections contain 6, 8, 2 and 2 distinct articles with valid routes', async () => {
+test('collections contain 6, 8, 2 and 3 distinct articles with valid routes', async () => {
   const { wechatCollections, collectionForArticle } = await import('../src/components/wechat-catalog.js');
-  assert.deepEqual(wechatCollections.map(c => c.articles.length), [6, 8, 2, 2]);
+  assert.deepEqual(wechatCollections.map(c => c.articles.length), [6, 8, 2, 3]);
   const ids = wechatCollections.flatMap(c => c.articles.map(([id]) => id));
-  assert.equal(new Set(ids).size, 18);
+  assert.equal(new Set(ids).size, 19);
   for (const c of wechatCollections) for (const [id] of c.articles) {
     assert.equal(resolveNavigation('#' + id)?.group, 'wechat');
     assert.equal(collectionForArticle(id).id, c.id);

@@ -7,6 +7,7 @@ const views = {
   'ai-love-letters': ['ai-love-letters', 'wechat'],
   'beyond-the-selloff': ['beyond-the-selloff', 'wechat'],
   'experience-compounds': ['experience-compounds', 'wechat'],
+  'ai-efficiency-gains': ['ai-efficiency-gains', 'wechat'],
   'agency-bloom': ['agency-bloom', 'wechat'],
   'agency-bloom-value': ['agency-bloom-value', 'wechat'],
   'agency-bloom-applause': ['agency-bloom-applause', 'wechat'],
