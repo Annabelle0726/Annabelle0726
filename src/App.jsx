@@ -36,6 +36,7 @@ import NewLifeArticle from './sections/NewLifeArticle';
 import ReadmeAtelierArticle from './sections/ReadmeAtelierArticle';
 import SpecToTestedCodeArticle from './sections/SpecToTestedCodeArticle';
 import AiEfficiencyGainsArticle from './sections/AiEfficiencyGainsArticle';
+import RecentWechatArticle from './sections/RecentWechatArticle';
 
 export default function App() {
   const [isMobile, setIsMobile] = useState(() => window.matchMedia('(max-width: 767px)').matches);
@@ -105,6 +106,7 @@ export default function App() {
     'readme-atelier-notes': <ReadmeAtelierArticle language={language} onNavigate={navigate} />,
     'spec-to-tested-code-notes': <SpecToTestedCodeArticle language={language} onNavigate={navigate} />,
     'ai-efficiency-gains': <AiEfficiencyGainsArticle language={language} onNavigate={navigate} />,
+    ...Object.fromEntries(['seat-for-the-dice', 'keep-what-you-loved'].map(id => [id, <RecentWechatArticle key={id} id={id} language={language} onNavigate={navigate} />])),
     home: <Hero language={language} onNavigate={navigate} />,
     about: <About language={language} onNavigate={navigate} />,
     portfolio: <WebProjects language={language} onNavigate={navigate} />,

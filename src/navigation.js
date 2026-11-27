@@ -8,6 +8,8 @@ const views = {
   'beyond-the-selloff': ['beyond-the-selloff', 'wechat'],
   'experience-compounds': ['experience-compounds', 'wechat'],
   'ai-efficiency-gains': ['ai-efficiency-gains', 'wechat'],
+  'seat-for-the-dice': ['seat-for-the-dice', 'wechat'],
+  'keep-what-you-loved': ['keep-what-you-loved', 'wechat'],
   'agency-bloom': ['agency-bloom', 'wechat'],
   'agency-bloom-value': ['agency-bloom-value', 'wechat'],
   'agency-bloom-applause': ['agency-bloom-applause', 'wechat'],

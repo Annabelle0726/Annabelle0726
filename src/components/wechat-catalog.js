@@ -17,6 +17,7 @@ export const wechatCollections = [
     ['page-soul', '页面有了灵魂，是一种什么感觉？'],
     ['readme-atelier-notes', '好项目，值得一份好读的 README'],
     ['spec-to-tested-code-notes', 'AI 说「做完了」，我想再问一句'],
+    ['keep-what-you-loved', '让最初的喜欢，留在最后的页面里'],
   ] },
   { id: 'wechat-seeing-each-other', title: '看见彼此', en: 'Seeing each other', description: '在这里，记录人与人之间的理解与距离，关注彼此的不同，也看见每个人独有的光。', articles: [
     ['respecting-lives', '尊重每一种生活，也看见每一个人'],
@@ -26,6 +27,7 @@ export const wechatCollections = [
     ['beyond-the-selloff', '满屏都是绿，然后呢？'],
     ['experience-compounds', '工作不是打怪升级，为什么有人越做越厉害？'],
     ['ai-efficiency-gains', 'AI 把活干快了，谁把钱赚了？'],
+    ['seat-for-the-dice', '请给骰子留个座位'],
   ] },
 ];
 
